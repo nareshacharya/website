@@ -6,6 +6,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
+import './styles.css';
 
 function App() {
   return (
