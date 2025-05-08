@@ -18,12 +18,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://nareshacharya.github.io/website/",
-"scripts": {
-  "start": "craco start",
-  "build": "craco build",
-  "test": "craco test"
-},
+  "homepage": "https://nareshacharya.github.io/website",
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
