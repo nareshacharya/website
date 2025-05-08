@@ -53,3 +53,36 @@
   background: #00aaff;
   color: #fff;
 }
+
+.hero-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-icons a {
+  font-size: 1.5rem;
+  color: #00aaff;
+  transition: color 0.3s ease;
+}
+
+.hero-icons a:hover {
+  color: #007bbd;
+}
+.hero-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-icons a {
+  font-size: 1.5rem;
+  color: #00aaff;
+  transition: color 0.3s ease;
+}
+
+.hero-icons a:hover {
+  color: #007bbd;
+}
