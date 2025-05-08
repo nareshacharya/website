@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #eee;
+  /*  border-bottom: 1px solid #eee; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -43,8 +43,8 @@
   left: 0;
   height: 3px;
   width: 100%;
-  background: #000;
-  color: #0073e6;
+  background: #0073e6;
+  border-radius: 2px;
 }
 
 /* Burger menu */
