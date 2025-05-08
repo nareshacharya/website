@@ -1,0 +1,78 @@
+.case-study {
+  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.case-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
+
+.case-hero p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.case-section {
+  margin-bottom: 2.5rem;
+}
+
+.case-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.case-section p,
+.case-section ul {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.case-section ul {
+  padding-left: 1.2rem;
+}
+
+.case-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.case-images img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.back-link {
+  margin-bottom: 2rem;
+}
+
+.back-link a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
+.section-icon {
+  font-size: 3.5rem;
+  color: #00aaff;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  opacity: 0.5;
+}

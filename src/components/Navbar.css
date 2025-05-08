@@ -1,53 +1,60 @@
-/* Sticky header + Montserrat */
+/* Navbar container */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
-  background: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem 2rem;
-  /*  border-bottom: 1px solid #eee; */
+  padding: 2rem 1rem; /* more breathing room */
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   font-family: "Montserrat", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* soft shadow */
 }
 
-/* Logo styling */
+/* NP Logo */
 .logo {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000;
 }
 
-/* Desktop nav */
+/* Horizontal nav links (desktop) */
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links a {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #333; /* improved visibility */
   text-decoration: none;
-  font-weight: 500;
-  color: #000;
   position: relative;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #0073e6;
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00aaff;
 }
 
 .nav-links a.active::after,
 .nav-links a:hover::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -6px;
   left: 0;
   height: 2px;
   width: 100%;
-  background: #0073e6;
+  background: #00aaff;
 }
 
-/* Burger menu */
+/* Burger menu for mobile */
 .burger {
   display: none;
   flex-direction: column;
@@ -62,12 +69,13 @@
   transition: all 0.3s ease;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
     top: 64px;
     right: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     flex-direction: column;
     width: 100%;
     padding: 1rem 2rem;

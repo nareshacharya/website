@@ -1,0 +1,55 @@
+.blog-detail {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.back-link {
+  margin-bottom: 1rem;
+}
+
+.back-link a {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  background: #eef6ff;
+  color: #0077cc;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.blog-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.blog-detail h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #cc0000;
+}

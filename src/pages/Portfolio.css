@@ -1,0 +1,135 @@
+
+.portfolio-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-filter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-filter button {
+  padding: 0.6rem 1.5rem;
+  margin: 0.5rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.portfolio-filter button.active {
+  background: #00aaff;
+  color: #fff;
+}
+
+.tag-reset {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tag-reset button {
+  background: none;
+  border: none;
+  color: #0077cc;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-row-tile {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-row-tile:hover {
+  transform: translateY(-4px);
+}
+
+.project-row-tile img {
+  width: 40%;
+  object-fit: cover;
+  height: auto;
+}
+
+.project-row-content {
+  padding: 1.8rem;
+  flex: 1;
+}
+
+.project-row-content h3 {
+  font-size: 1.5rem;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
+
+.project-row-content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.project-tags .tag {
+  background: #eef6ff;
+  color: #0077cc;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.project-tags .tag.active {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.project-tags .tag:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+.project-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #00aaff;
+}
+
+@media (max-width: 768px) {
+  .project-row-tile {
+    flex-direction: column;
+  }
+
+  .project-row-tile img {
+    width: 100%;
+  }
+
+  .project-row-content {
+    padding: 1.2rem;
+  }
+}

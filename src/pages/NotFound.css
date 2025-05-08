@@ -1,0 +1,26 @@
+.not-found {
+  max-width: 700px;
+  margin: 6rem auto;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.not-found h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #cc0000;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.back-home {
+  color: #00aaff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
