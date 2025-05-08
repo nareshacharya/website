@@ -14,7 +14,7 @@
 
 /* Logo styling */
 .logo {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -41,9 +41,10 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  height: 2px;
+  height: 3px;
   width: 100%;
   background: #000;
+  color: #0073e6;
 }
 
 /* Burger menu */
