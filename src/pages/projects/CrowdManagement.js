@@ -6,7 +6,8 @@ import {
   FaDraftingCompass,
   FaCogs,
   FaTrophy,
-  FaLightbulb
+  FaLightbulb,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -93,7 +94,7 @@ const CrowdManagement = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/crowd-wireframe.jpg" alt="Early Wireframe View" />
           <img src="/images/crowd-heatmap.jpg" alt="Final Heatmap Interface" />

@@ -6,7 +6,8 @@ import {
   FaDraftingCompass,
   FaCogs,
   FaTrophy,
-  FaLightbulb
+  FaLightbulb,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -97,7 +98,7 @@ const TALServicePortal = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/tal-csp-before.jpg" alt="TAL CSP – Before" />
           <img src="/images/tal-csp-after.jpg" alt="TAL CSP – Constellation Upgrade" />

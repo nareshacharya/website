@@ -6,7 +6,8 @@ import {
   FaMobileAlt,
   FaCogs,
   FaTrophy,
-  FaHeart
+  FaHeart,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -87,7 +88,7 @@ const WomenSafety = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/women-safety-sos.jpg" alt="SOS Alert UI" />
           <img src="/images/women-safety-trackme.jpg" alt="Track Me Feature UI" />

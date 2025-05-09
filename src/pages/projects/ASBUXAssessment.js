@@ -6,7 +6,8 @@ import {
   FaDraftingCompass,
   FaCogs,
   FaTrophy,
-  FaLightbulb
+  FaLightbulb,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -98,7 +99,7 @@ const ASBUXAssessment = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/asb-audit.jpg" alt="Audit Findings Snapshot" />
           <img src="/images/asb-guidelines.jpg" alt="Standardized UI Guidebook" />

@@ -6,7 +6,8 @@ import {
   FaDraftingCompass,
   FaCogs,
   FaTrophy,
-  FaLightbulb
+  FaLightbulb,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -94,7 +95,7 @@ const CrumUnderwriting = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/cf-before.jpg" alt="Legacy UI (Before)" />
           <img src="/images/cf-after.jpg" alt="Proposed UX Uplift (After)" />

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaBullseye, FaUserShield, FaCompass, FaDraftingCompass, FaCogs, FaTrophy, FaLightbulb } from 'react-icons/fa';
+import { FaBullseye, FaUserShield, FaCompass, FaDraftingCompass, FaCogs, FaTrophy, FaLightbulb, FaDesktop } from 'react-icons/fa';
 import '../CaseStudy.css';
 
 const DisasterManagement = () => {
@@ -77,7 +77,7 @@ const DisasterManagement = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/disaster-map.jpg" alt="Map View with Resources" />
           <img src="/images/disaster-timeline.jpg" alt="Timeline Planning UI" />

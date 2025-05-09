@@ -21,7 +21,7 @@
   transition: all 0.2s ease;
 }
 .portfolio-filter button:hover {
-  background: #eca39d;
+  background: #eef6ff;
   color: #111;
 }
 .portfolio-filter button.active {

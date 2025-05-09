@@ -6,7 +6,8 @@ import {
   FaDraftingCompass,
   FaCogs,
   FaTrophy,
-  FaLightbulb
+  FaLightbulb,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -85,7 +86,7 @@ const CrimeAnalytics = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/crime-heatmap.jpg" alt="Crime Heatmap View" />
           <img src="/images/crime-dashboard.jpg" alt="Crime Dashboard & Trend Analysis" />

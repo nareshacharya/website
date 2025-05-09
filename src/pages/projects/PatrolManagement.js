@@ -6,7 +6,8 @@ import {
   FaRoute,
   FaTools,
   FaAward,
-  FaBrain
+  FaBrain,
+  FaDesktop
 } from 'react-icons/fa';
 import '../CaseStudy.css';
 
@@ -87,7 +88,7 @@ const PatrolManagement = () => {
       </div>
 
       <div className="case-section">
-        <h2>🖼 Screenshots</h2>
+        <h2><FaDesktop className="section-icon" />  Screenshots</h2>
         <div className="case-images">
           <img src="/images/patrol-map.jpg" alt="Patrol Planning Map" />
           <img src="/images/patrol-mobile.jpg" alt="Mobile Field Officer App" />
