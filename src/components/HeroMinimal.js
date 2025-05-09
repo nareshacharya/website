@@ -10,13 +10,13 @@ const HeroMinimal = () => {
       </div>
       <div className="hero-right">
       <div className="stats">
-          <div><strong>200+</strong><span>Projects</span></div>
+          <div><strong>80+</strong><span>Projects</span></div>
           <div><strong>7+</strong><span>Domains</span></div>
           <div><strong>100%</strong><span>Experience-led</span></div>
         </div>
         <div className="intro-text">
           <h1>Hello!</h1>
-          <p>I am Naresh Pentapati, a UX Leader from Hyderabad</p>
+          <p>I am <span>Naresh Pentapati</span>, a UX Leader from Hyderabad</p>
         </div>
 
         <div className="hero-icons">

@@ -46,7 +46,7 @@
 
 .blog-card h3 {
   font-size: 1.4rem;
-  color: #00aaff;
+  color: #333;
   margin-bottom: 0.75rem;
 }
 
@@ -87,5 +87,5 @@
 }
 
 .blog-card-link:hover .blog-card h3 {
-  color: #0077cc;
+  color: #333;
 }

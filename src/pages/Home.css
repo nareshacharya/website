@@ -2,11 +2,11 @@
   margin: 0 auto;
   font-size: 2.5rem;
   font-weight: 300;
-  color: #fff;
+  color: #111;
   text-align: center;
   line-height: 1.8;
   padding: 8rem 1rem;
-  background: #2653af;
+  background: #ffe989;
 }
 .intro-section p {
   max-width: 1280px;
@@ -32,7 +32,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  gap: 0rem;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem 2rem 1rem;
@@ -59,7 +59,7 @@
 
 .skill-tile i {
   font-size: 3rem;
-  color: #ffc13d;
+  color: #ffe989;
   min-width: 32px;
   text-align: center;
 }
@@ -159,10 +159,9 @@
 .tags span {
   padding: 0.4rem 1rem;
   background: #f0f8ff;
-  color: #2653af;
+  color: #ffe989;
   font-size: 0.85rem;
   border-radius: 999px;
-  border: 1px solid #aec0e4;
 }
 
 /* Responsive Stack */
@@ -191,7 +190,7 @@
   font-size: 1rem;
   border: 2px solid #00aaff;
   border-radius: 8px;
-  color: #00aaff;
+  color: #0094ff;
   background: transparent;
   font-weight: 500;
   text-decoration: none;

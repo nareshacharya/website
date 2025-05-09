@@ -8,7 +8,7 @@
 .case-hero h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2653af;
+  color: #333;
   margin-bottom: 1rem;
 }
 
@@ -71,7 +71,7 @@
 }
 .section-icon {
   font-size: 3.5rem;
-  color: #ffc13d;
+  color: #ffe989;
   margin-right: 0.5rem;
   vertical-align: middle;
   opacity: 0.5;

@@ -59,8 +59,8 @@
 }
 
 .tags span {
-  background-color: #e6f4fd;
-  color: #2653af;
+  background-color: #ffe989;
+  color: #555;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -71,13 +71,13 @@
   padding: 0.5rem 1.2rem;
   border-radius: 5px;
   font-weight: 500;
-  color: #2653af;
+  color: #333;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
 .btn-outline:hover {
-  background-color: #ffc13d;
+  background-color: #ffe989;
   color: #fff;
 }
 
@@ -85,12 +85,12 @@
   display: inline-block;
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: #2653af;
+  color: #333;
   font-weight: 500;
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
 .project-cta:hover {
-  color: #18288d;
+  color: #0094ff;
 }
