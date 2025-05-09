@@ -22,11 +22,11 @@
 }
 .portfolio-filter button:hover {
   background: #eef6ff;
-  color: #111;
+  color: #0077cc;
 }
 .portfolio-filter button.active {
-  background: #ffe989;
-  color: #333;
+  background: #eef6ff;
+  color: #0077cc;
 }
 
 .tag-reset {
@@ -95,8 +95,8 @@
 }
 
 .project-tags .tag {
-  background: #ffe989;
-  color: #555;
+  background: #eef6ff;
+  color: #0077cc;
   font-size: 0.8rem;
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
@@ -106,12 +106,12 @@
 
 .project-tags .tag.active {
   background-color: #00aaff;
-  color: #333;
+  color: #fff;
 }
 
 .project-tags .tag:hover {
-  background-color: #ffe989;
-  color: 333;
+  background-color: #eef6ff;
+  color: #0077cc;
 }
 
 .project-cta {

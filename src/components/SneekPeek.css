@@ -59,8 +59,8 @@
 }
 
 .tags span {
-  background-color: #ffe989;
-  color: #555;
+  background-color: #eef6ff;
+  color: #0077cc;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -77,8 +77,8 @@
 }
 
 .btn-outline:hover {
-  background-color: #ffe989;
-  color: #fff;
+  background-color: #eef6ff;
+  color: #0077cc;
 }
 
 .project-cta {

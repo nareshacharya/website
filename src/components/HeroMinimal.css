@@ -123,3 +123,11 @@
     gap: 2rem;
   }
 }
+
+.gradient-background {
+  background: linear-gradient(to right, #ffffff, #e5f3fe); /* Linear gradient */
+  /* background: radial-gradient(circle, #007bff, #dc3545); Radial gradient */
+  /* background: conic-gradient(#007bff, #dc3545); Conic gradient */
+  height: 91vh; /* Make the gradient cover the full viewport height */
+  width: 100vw; /* Make the gradient cover the full viewport width */
+}

@@ -1,0 +1,23 @@
+.stats-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.stat-box {
+  font-family: "Montserrat", sans-serif;
+}
+
+.count {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #222;
+}
+
+.label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}

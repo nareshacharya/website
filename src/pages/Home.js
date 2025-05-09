@@ -1,12 +1,12 @@
 import './Home.css';
-import { Link } from 'react-router-dom';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+
 import SneekPeek from '../components/SneekPeek';
 import '../components/SneekPeek.css';
 import HeroMinimal from '../components/HeroMinimal';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import AnimatedCompetencies from '../components/AnimatedCompetencies';
+{/*
 const skills = [
   { icon: "fa-sitemap", label: "UX Strategy" },
   { icon: "fa-layer-group", label: "Design Systems" },
@@ -19,7 +19,7 @@ const skills = [
   { icon: "fa-code", label: "Frontend Development" },
   { icon: "fa-users", label: "Team Leadership" },
 ];
-
+ 
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -35,7 +35,7 @@ const itemVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } }
 };
-
+ */}
 const Home = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.3 });
@@ -53,7 +53,7 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Animated Core Expertise Section */}
+      {/* Animated Core Expertise Section 
       <section className="skills-section" ref={ref}>
         <h2>Core Expertise</h2>
         <motion.div
@@ -76,7 +76,8 @@ const Home = () => {
           ))}
         </motion.div>
       </section>
-
+      */}
+      <AnimatedCompetencies />
       <SneekPeek />
     </>
   );
