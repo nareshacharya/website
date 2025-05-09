@@ -3,7 +3,7 @@ import './SneekPeek.css';
 
 const sneakPeekProjects = [
   {
-    id: 'crum-forster',
+    id: 'crum-underwriting',
     title: 'Crum & Forster Underwriting Workbench',
     description: 'Led the UX uplift of legacy UI Kit applications into a unified, modular experience aligned with Pega Constellation principles, streamlining underwriting workflows across risk segments.',
     tags: ['Design System', 'Insurance', 'Enterprise UX', 'Pega'],
