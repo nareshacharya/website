@@ -7,28 +7,28 @@ const sneakPeekProjects = [
     title: 'Crum & Forster Underwriting Workbench',
     description: 'Led the UX uplift of legacy UI Kit applications into a unified, modular experience aligned with Pega Constellation principles, streamlining underwriting workflows across risk segments.',
     tags: ['Design System', 'Insurance', 'Enterprise UX', 'Pega'],
-    image: '/images/cf.jpg'
+    image: process.env.PUBLIC_URL + '/images/cf.jpg'
   },
   {
     id: 'patrol-management',
     title: 'Patrol Management Platform',
     description: 'Designed and delivered a mobile-first solution to plan, assign, and monitor patrolling activity with GPS tracking, AI-based suggestions, and offline sync for field officers.',
     tags: ['Field Operations', 'Mobile UX', 'AI Recommendations', 'Public Safety'],
-    image: '/images/patrol.jpg'
+    image: process.env.PUBLIC_URL + '/images/patrol.jpg'
   },
   {
     id: 'crowd-management',
     title: 'Crowd Management System',
     description: 'Developed a real-time crowd monitoring platform for public events, integrating GPS heatmaps, AI pattern detection, and role-based access for command centers.',
     tags: ['Public Safety', 'GIS', 'Crowd Intelligence'],
-    image: '/images/crowd.jpg'
+    image: process.env.PUBLIC_URL + '/images/crowd.jpg'
   },
   {
     id: 'investigation-analytics',
     title: 'Investigation Analytics Platform',
     description: 'Built a highly interactive investigative platform supporting link analysis, case history, and AI-assisted insights to empower intelligence teams in complex criminal investigations.',
     tags: ['Crime Analytics', 'AI Visualizations', 'Public Safety'],
-    image: '/images/investigation.jpg'
+    image: process.env.PUBLIC_URL + '/images/investigation.jpg'
   }
 ];
 

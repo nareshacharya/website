@@ -1,0 +1,119 @@
+.hero-minimal {
+  display: flex;
+  height: 88vh;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  align-items: flex-end; /* ⬅️ Align image to bottom */
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.hero-right {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #111;
+  text-align: left;
+}
+
+.intro-text h1 {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.7;
+}
+
+.intro-text p {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  gap: 8rem;
+  margin: 2.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+  padding-bottom: 4rem;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+
+.stats strong {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+}
+
+.hero-icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-icons a {
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.hero-icons a:hover {
+  color: #00aaff;
+}
+
+.scroll-note {
+  margin-top: auto;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-minimal {
+    flex-direction: column;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 4rem;
+  }
+
+  .intro-text p {
+    font-size: 1.5rem;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
