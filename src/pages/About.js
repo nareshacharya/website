@@ -15,12 +15,12 @@ const aboutTiles = [
   },
   {
     label: 'World Explorer',
-    caption: 'From Kenya’s savannah to Bhutan’s peaks',
+    caption: 'Beauty of Zurich, Switzerland',
     image: process.env.PUBLIC_URL + '/images/about/travel.jpg'
   },
   {
     label: 'Bike Tourer',
-    caption: 'Rode 1300km across South India',
+    caption: 'Rode 1600km across Switzerland, Italy, Austria and Germany',
     image: process.env.PUBLIC_URL + '/images/about/biketour.jpg'
   },
   {
@@ -40,7 +40,7 @@ const About = () => {
 
   return (
     <section className="about-grid">
-      <h1>Beyond Design</h1>
+      <h1>Things I do Beyond Design</h1>
       <div className="grid">
         {aboutTiles.map((tile, i) => (
           <div className="tile" key={i} onClick={() => setActiveTile(tile)}>

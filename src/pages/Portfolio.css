@@ -1,9 +1,8 @@
-
 .portfolio-wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 4rem 2rem;
-  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .portfolio-filter {
@@ -14,16 +13,19 @@
 .portfolio-filter button {
   padding: 0.6rem 1.5rem;
   margin: 0.5rem;
-  background: #f0f0f0;
+  background: #f3f3f1;
   border: none;
   border-radius: 20px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-
+.portfolio-filter button:hover {
+  background: #eca39d;
+  color: #111;
+}
 .portfolio-filter button.active {
-  background: #00aaff;
+  background: #2653af;
   color: #fff;
 }
 
@@ -53,7 +55,7 @@
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
 
@@ -74,7 +76,7 @@
 
 .project-row-content h3 {
   font-size: 1.5rem;
-  color: #00aaff;
+  color: #2653af;
   margin-bottom: 1rem;
 }
 
@@ -94,7 +96,7 @@
 
 .project-tags .tag {
   background: #eef6ff;
-  color: #0077cc;
+  color: #2653af;
   font-size: 0.8rem;
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
@@ -108,7 +110,7 @@
 }
 
 .project-tags .tag:hover {
-  background-color: #0077cc;
+  background-color: #2653af;
   color: white;
 }
 
@@ -117,7 +119,7 @@
   margin-top: 0.5rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #00aaff;
+  color: #2653af;
 }
 
 @media (max-width: 768px) {

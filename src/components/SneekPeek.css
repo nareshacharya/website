@@ -60,7 +60,7 @@
 
 .tags span {
   background-color: #e6f4fd;
-  color: #0077cc;
+  color: #2653af;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -68,17 +68,16 @@
 }
 
 .btn-outline {
-  border: 1px solid #0077cc;
   padding: 0.5rem 1.2rem;
   border-radius: 5px;
   font-weight: 500;
-  color: #0077cc;
+  color: #2653af;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
 .btn-outline:hover {
-  background-color: #0077cc;
+  background-color: #ffc13d;
   color: #fff;
 }
 
@@ -86,12 +85,12 @@
   display: inline-block;
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: #00aaff;
+  color: #2653af;
   font-weight: 500;
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
 .project-cta:hover {
-  color: #0077cc;
+  color: #18288d;
 }

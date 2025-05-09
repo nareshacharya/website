@@ -10,7 +10,7 @@ const allProjects = [
     category: 'public',
     tech: ['GIS', 'Real-time Data', 'Event Ops', 'Web App'],
     description: 'Real-time monitoring of crowd density, behavior, and vehicle movement during events.',
-    image: '/images/crowd.jpg'
+    image: process.env.PUBLIC_URL + '/images/crowd.jpg'
   },
   {
     id: 'disaster-management',
@@ -18,7 +18,7 @@ const allProjects = [
     category: 'public',
     tech: ['Emergency Planning', 'Map UI', 'Resource Mapping', 'Offline UX'],
     description: 'Operational planning and resource mapping for emergency response teams.',
-    image: '/images/disaster.jpg'
+    image: process.env.PUBLIC_URL + '/images/disaster.jpg'
   },
   {
     id: 'patrol-management',
@@ -26,7 +26,7 @@ const allProjects = [
     category: 'public',
     tech: ['Mobile-first', 'Beat Planning', 'GPS Tracking', 'Offline Access'],
     description: 'Beat planning, patrol tracking, and AI-powered mobility for field officers.',
-    image: '/images/patrol.jpg'
+    image: process.env.PUBLIC_URL + '/images/patrol.jpg'
   },
   {
     id: 'crime-analytics',
@@ -34,7 +34,7 @@ const allProjects = [
     category: 'public',
     tech: ['GIS', 'Heatmaps', 'Predictive Insights', 'Public Safety'],
     description: 'GIS-based crime heatmaps, trend patterns, and predictive insights.',
-    image: '/images/crime.jpg'
+    image: process.env.PUBLIC_URL + '/images/crime.jpg'
   },
   {
     id: 'investigation-analytics',
@@ -42,7 +42,7 @@ const allProjects = [
     category: 'public',
     tech: ['Link Analysis', 'Data Visualization', 'AI Insights', 'Graph UI'],
     description: 'Link analysis, crime scene intelligence, and suspect journey visualization.',
-    image: '/images/investigation.jpg'
+    image: process.env.PUBLIC_URL + '/images/investigation.jpg'
   },
   {
     id: 'suspect-tracking',
@@ -50,7 +50,7 @@ const allProjects = [
     category: 'public',
     tech: ['AI Video', 'Facial Recognition', 'Path Tracing', 'Live Surveillance'],
     description: 'AI-driven recognition and tracking from multi-source city surveillance.',
-    image: '/images/suspect.jpg'
+    image: process.env.PUBLIC_URL + '/images/suspect.jpg'
   },
   {
     id: 'women-safety',
@@ -58,7 +58,7 @@ const allProjects = [
     category: 'public',
     tech: ['Mobile App', 'SOS Alerts', 'Geofencing', 'Secure UX'],
     description: 'Emergency SOS, tracking, shuttle visibility, and complaint management.',
-    image: '/images/women.jpg'
+    image: process.env.PUBLIC_URL + '/images/women.jpg'
   },
   {
     id: 'crum-underwriting',
@@ -66,7 +66,7 @@ const allProjects = [
     category: 'enterprise',
     tech: ['Pega', 'UI Kit', 'Constellation Parity', 'Design System'],
     description: 'Constellation-aligned UX uplift for underwriting workflows across risk segments.',
-    image: '/images/cf-after.jpg'
+    image: process.env.PUBLIC_URL + '/images/cf.jpg'
   },
   {
     id: 'tal-service-portal',
@@ -74,7 +74,7 @@ const allProjects = [
     category: 'enterprise',
     tech: ['Pega', 'Constellation', 'UX Audit', 'Feasibility Mapping'],
     description: '3-week UX assessment to align legacy Pega screens with Constellation and streamline workflows.',
-    image: '/images/tal-csp-after.jpg'
+    image: process.env.PUBLIC_URL + '/images/tal.jpg'
   },
   {
     id: 'asb-ux-assessment',
@@ -82,7 +82,7 @@ const allProjects = [
     category: 'enterprise',
     tech: ['Design System', 'Governance', 'Component Library', 'Enterprise UX'],
     description: 'Component-based design system rollout across 18 Pega applications at ASB Bank.',
-    image: '/images/asb-guidelines.jpg'
+    image: process.env.PUBLIC_URL + '/images/asb.jpg'
   }
 ];
 
