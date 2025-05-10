@@ -7,9 +7,19 @@
 .about-grid h1 {
   text-align: center;
   font-size: 2.5rem;
+}
+.about-grid p {
+  font-family: "Oregano", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: #444;
+  width: 100%;
+  text-align: center;
   margin-bottom: 4rem;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -60,9 +70,10 @@
 }
 
 .overlay p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
   color: #eee;
+  font-family: "Montserrat", cursive;
 }
 
 /* Modal */
@@ -104,6 +115,7 @@
 .modal-content p {
   font-size: 1rem;
   color: #444;
+  font-family: "Montserrat", cursive;
 }
 
 .close {

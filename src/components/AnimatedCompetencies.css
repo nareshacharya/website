@@ -1,5 +1,5 @@
 .competency-tiles {
-  padding: 6rem 2rem;
+  padding: 4rem 6rem 6rem 2rem;
   background: #f1f5fa;
   text-align: center;
 }
@@ -30,7 +30,7 @@
 }
 
 .competency-tile:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .tile-icon {

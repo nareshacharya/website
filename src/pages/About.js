@@ -5,23 +5,23 @@ import { useState } from 'react';
 const aboutTiles = [
   {
     label: 'Wildlife Photographer',
-    caption: 'Shot in Masai Mara,Kenya, 2025',
+    caption: 'An inujred lion protecting the carcass as the family feasts in the background, shot in Masai Mara,Kenya',
     image: process.env.PUBLIC_URL + '/images/about/wildlife.jpg'
   },
+  {
+    label: 'Wildlife Photographer',
+    caption: 'A sunrise shot with giraffe in Masai Mara,Kenya',
+    image: process.env.PUBLIC_URL + '/images/about/cyclist.jpg'
+  },  
+  {
+    label: 'Wildlife Photographer',
+    caption: 'The mighty leopard(LuLuka) in Masai Mara,Kenya',
+    image: process.env.PUBLIC_URL + '/images/about/leopard.jpg'
+  },  
   {
     label: 'Avid Cyclist',
     caption: '200km Heaven & Hell, Brevet',
     image: process.env.PUBLIC_URL + '/images/about/cycling.jpg'
-  },
-  {
-    label: 'World Explorer',
-    caption: 'Beauty of Zurich, Switzerland',
-    image: process.env.PUBLIC_URL + '/images/about/travel.jpg'
-  },
-  {
-    label: 'Bike Tourer',
-    caption: 'Rode 1600km across Switzerland, Italy, Austria and Germany',
-    image: process.env.PUBLIC_URL + '/images/about/biketour.jpg'
   },
   {
     label: 'Fitness Enthusiast',
@@ -29,10 +29,25 @@ const aboutTiles = [
     image: process.env.PUBLIC_URL + '/images/about/fitness.jpg'
   },
   {
+    label: 'Bike Tourer',
+    caption: 'Rode 1600km across Switzerland, Italy, Austria and Germany',
+    image: process.env.PUBLIC_URL + '/images/about/alps.jpg'
+  },
+    {
+    label: 'World Explorer',
+    caption: 'Exploring the beauty of Zurich, Switzerland',
+    image: process.env.PUBLIC_URL + '/images/about/travel.jpg'
+  },
+  {
     label: 'Nature Lover',
     caption: 'Camping, hiking, and forest walks',
     image: process.env.PUBLIC_URL + '/images/about/nature.jpg'
   },
+  {
+    label: 'Pistol Shooting',
+    caption: 'Practicing pistol shooting occasionally',
+    image: process.env.PUBLIC_URL + '/images/about/shooting.jpg'
+  },  
 ];
 
 const About = () => {
@@ -41,6 +56,7 @@ const About = () => {
   return (
     <section className="about-grid">
       <h1>Things I do Beyond Design</h1>
+      <p classname="short">I'm ok to say jack of all trades and master of none because <br/> it is the experience and people which matters to me!</p>
       <div className="grid">
         {aboutTiles.map((tile, i) => (
           <div className="tile" key={i} onClick={() => setActiveTile(tile)}>
