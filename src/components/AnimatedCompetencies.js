@@ -3,15 +3,15 @@ import { FaLightbulb, FaCogs, FaUniversalAccess, FaUsersCog, FaChartLine } from 
 import './AnimatedCompetencies.css';
 
 const competencies = [
-  { title: 'Visionary Product Thinking', icon: <FaLightbulb /> },
-  { title: 'Executive Stakeholder Engagement', icon: <FaUsersCog /> },
-  { title: 'Metrics-Driven UX Strategy', icon: <FaChartLine /> },
-  { title: 'Design Leadership & Mentorship', icon: <FaCogs /> },
-  { title: 'Enterprise UX & Design Systems', icon: <FaCogs /> },
-  { title: 'Generative AI in Product Design', icon: <FaLightbulb /> },
-  { title: 'Accessibility (WCAG)', icon: <FaUniversalAccess /> },
-  { title: 'Research-Driven Design Decisions', icon: <FaChartLine /> },
-  { title: 'Agile UX & DesignOps', icon: <FaUsersCog /> },
+  { title: 'Visionary Product Thinking', icon: process.env.PUBLIC_URL + '/images/competencies/product-thinking.jpg' },
+  { title: 'Executive Stakeholder Engagement', icon: process.env.PUBLIC_URL + '/images/competencies/executive-management.jpg' },
+  { title: 'Metrics-Driven UX Strategy', icon: process.env.PUBLIC_URL + '/images/competencies/metrics.jpg' },
+  { title: 'Design Leadership & Mentorship', icon: process.env.PUBLIC_URL + '/images/competencies/design-leadership.jpg' },
+  { title: 'Enterprise UX & Design Systems', icon: process.env.PUBLIC_URL + '/images/competencies/enterprise-ux.jpg' },
+  { title: 'Generative AI in Product Design', icon: process.env.PUBLIC_URL + '/images/competencies/generative-ai.jpg' },
+  { title: 'Accessibility (WCAG)', icon: process.env.PUBLIC_URL + '/images/competencies/accessibility.jpg' },
+  { title: 'Research-Driven Design Decisions', icon: process.env.PUBLIC_URL + '/images/competencies/research.jpg' },
+  { title: 'Agile UX & DesignOps', icon: process.env.PUBLIC_URL + '/images/competencies/agile.jpg' },
 ];
 
 export default function AnimatedCompetencies() {
@@ -28,7 +28,8 @@ export default function AnimatedCompetencies() {
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.5 }}
           >
-            <div className="tile-icon">{item.icon}</div>
+            <div className="tile-icon"><img src={item.icon} alt={item.title} /></div>
+
             <p>{item.title}</p>
           </motion.div>
         ))}

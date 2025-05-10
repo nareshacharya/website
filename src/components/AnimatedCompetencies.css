@@ -37,6 +37,9 @@
   font-size: 3rem;
   color: #27a1f3;
 }
+.tile-icon img {
+  width: 10rem;
+}
 
 .competency-tile p {
   font-size: 1.3rem;
