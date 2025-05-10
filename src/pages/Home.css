@@ -166,6 +166,11 @@
 
 /* Responsive Stack */
 @media (max-width: 768px) {
+  .intro-section {
+    font-size: 1.5rem;
+    padding: 4rem 1rem;
+  }
+
   .peek-card,
   .peek-card.reverse {
     flex-direction: column;

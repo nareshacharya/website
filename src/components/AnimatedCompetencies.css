@@ -48,3 +48,10 @@
   line-height: 1.2;
   margin: 0 !important;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competency-tiles {
+    padding: 2rem;
+  }
+}

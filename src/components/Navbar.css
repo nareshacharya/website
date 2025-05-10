@@ -83,10 +83,12 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 2rem 0;
+  }
   .nav-links {
     position: absolute;
     top: 64px;
-    right: 0;
     background: rgba(255, 255, 255, 0.95);
     flex-direction: column;
     width: 100%;
@@ -96,9 +98,14 @@
 
   .nav-links.open {
     display: flex;
+    text-align: center;
+    padding: 2rem;
   }
-
+  .nav-links.open a {
+    font-size: 2rem;
+  }
   .burger {
     display: flex;
+    position: relative;
   }
 }
