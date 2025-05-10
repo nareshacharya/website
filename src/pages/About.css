@@ -1,6 +1,6 @@
 .about-grid {
   padding: 0 2rem 4rem 2rem;
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -76,14 +76,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1001;
 }
 
 .modal-content {
   position: relative;
   background: white;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 80%;
   max-height: 90vh;
   overflow: auto;
   border-radius: 8px;

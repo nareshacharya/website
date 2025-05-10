@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
@@ -25,8 +25,8 @@
   color: #0077cc;
 }
 .portfolio-filter button.active {
-  background: #eef6ff;
-  color: #0077cc;
+  background: #0077cc;
+  color: #ffffff;
 }
 
 .tag-reset {
@@ -43,44 +43,98 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+  justify-items: center;
 }
 
-.project-row-tile {
+@media (max-width: 768px) {
+  .portfolio-list {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+.project-tile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-decoration: none;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(213, 213, 213, 0.7);
   transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
 }
 
-.project-row-tile:hover {
-  transform: translateY(-4px);
+.project-tile:hover {
+  transform: translateY(-6px);
+}
+.project-header {
+  position: relative;
+  overflow: hidden;
 }
 
-.project-row-tile img {
-  width: 40%;
+.project-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 119, 204, 0.5);
+  z-index: 1;
+}
+.project-header img {
+  width: 100%;
   object-fit: cover;
-  height: auto;
+  height: 280px;
+  display: block;
+}
+.project-header h3 {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  font-size: 2.5rem;
+  color: #fff;
+  z-index: 2;
 }
 
-.project-row-content {
+.project-tile img {
+  width: 100%;
+  object-fit: cover;
+  height: 280px;
+  opacity: 1;
+}
+.project-tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
+
+.project-content {
   padding: 1.8rem;
   flex: 1;
+  position: relative;
+  z-index: 10;
+  padding: 1rem;
+  background: #fff;
+  color: #333;
+  z-index: 2;
 }
 
-.project-row-content h3 {
+.project-content h3 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
-.project-row-content p {
+.project-content p {
   font-size: 1rem;
   color: #444;
   margin-bottom: 1rem;
@@ -120,6 +174,8 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: #00aaff;
+  text-align: right;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
