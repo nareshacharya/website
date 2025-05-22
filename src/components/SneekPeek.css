@@ -1,7 +1,8 @@
 .sneak-peek-section {
   padding: 4rem 2rem;
-  max-width: 1200px;
+  align-items: center;
   margin: 0 auto;
+  background: #eef6ff;
 }
 
 .sneak-peek-section h2 {
@@ -13,9 +14,10 @@
 .peek-tile {
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 5rem auto;
 }
 
 .peek-tile.reverse {

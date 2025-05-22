@@ -6,6 +6,8 @@ import HeroMinimal from '../components/HeroMinimal';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AnimatedCompetencies from '../components/AnimatedCompetencies';
+import Certifications from '../components/Certifications';
+
 {/*
 const skills = [
   { icon: "fa-sitemap", label: "UX Strategy" },
@@ -78,6 +80,7 @@ const Home = () => {
       </section>
       */}
       <AnimatedCompetencies />
+      <Certifications />
       <SneekPeek />
     </>
   );
