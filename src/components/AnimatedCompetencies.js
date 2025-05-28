@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaLightbulb, FaCogs, FaUniversalAccess, FaUsersCog, FaChartLine } from 'react-icons/fa';
+// import { FaLightbulb, FaCogs, FaUniversalAccess, FaUsersCog, FaChartLine } from 'react-icons/fa';
 import './AnimatedCompetencies.css';
 
 const competencies = [
