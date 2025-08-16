@@ -1,14 +1,56 @@
+@import "./theme.css";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding-top: 84px;
+  padding-bottom: 120px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: transparent;
+  color: var(--color-text-dark);
+  transition: var(--transition-normal);
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  background: transparent;
+  color: var(--color-accent-primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Global responsive typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-bottom: 90px;
+  }
 }

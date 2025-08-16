@@ -1,9 +1,11 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background: transparent;
+  color: var(--color-text-dark);
 }
 
 nav {
-  background-color: #1e1e1e;
+  background: transparent;
   padding: 1rem;
 }
 
@@ -16,10 +18,16 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: var(--color-text-dark);
   text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+nav a:hover {
+  color: var(--color-accent-primary);
 }
 
 h1 {
   padding: 2rem;
+  color: var(--color-text-dark);
 }

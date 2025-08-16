@@ -12,8 +12,8 @@ const HeroMinimal = () => {
       <div className="hero-right">
       <StatsCount />
         <div className="intro-text">
-          <h1>Hello!</h1>
-          <p>I am <span>Naresh Pentapati</span>, a UX Leader from Hyderabad</p>
+          <h1>Transforming Digital Experiences at Scale</h1>
+          <p>Leading enterprise UX transformation with AI-powered innovation. Driving multi-million dollar business impact through strategic design leadership and team empowerment across 30+ member organizations.</p>
         </div>
 
         <div className="hero-icons">

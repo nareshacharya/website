@@ -1,0 +1,111 @@
+/* Professional Light Theme for Design Leadership */
+:root {
+  /* Primary Colors - Professional Light Palette */
+  --color-primary-darkest: #1e293b; /* Dark for text and contrasts */
+  --color-primary-dark: #334155; /* Rich dark blue-gray */
+  --color-primary-medium: #64748b; /* Professional medium gray */
+  --color-primary-light: #94a3b8; /* Light blue-gray */
+  --color-primary-lightest: #e2e8f0; /* Very light gray */
+
+  /* Secondary Colors - Sophisticated Accents */
+  --color-accent-primary: #3b82f6; /* Professional blue */
+  --color-accent-secondary: #8b5cf6; /* Elegant purple */
+  --color-accent-tertiary: #06b6d4; /* Modern cyan */
+  --color-accent-success: #10b981; /* Success green */
+  --color-accent-warning: #f59e0b; /* Sophisticated amber */
+
+  /* Gradient Variations */
+  --color-accent-light: #60a5fa; /* Light blue */
+  --color-accent-dark: #1d4ed8; /* Dark blue */
+  --color-accent-subtle: #eff6ff; /* Very light blue background */
+
+  /* Light Theme Neutral Colors */
+  --color-white: #ffffff;
+  --color-light-gray: #f8fafc;
+  --color-gray: #e2e8f0;
+  --color-medium-gray: #cbd5e1;
+  --color-dark-gray: #94a3b8;
+  --color-text-light: #ffffff;
+  --color-text-dark: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-secondary: #475569;
+
+  /* Professional Light Background Gradients - Removed */
+  --gradient-primary: none;
+  --gradient-hero: none;
+  --gradient-accent: none;
+  --gradient-sophisticated: none;
+
+  /* Light Theme Shadows - Removed */
+  --shadow-subtle: none;
+  --shadow-medium: none;
+  --shadow-large: none;
+  --shadow-xl: none;
+  --shadow-professional: none;
+
+  /* Smooth Professional Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* Responsive Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Responsive Breakpoints */
+  --bp-xs: 360px;
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1200px;
+}
+
+/* Global Responsive Typography */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+/* Dark theme variations for specific components */
+.dark-theme {
+  --color-background: var(--color-primary-darkest);
+  --color-surface: var(--color-primary-dark);
+  --color-text: var(--color-text-light);
+  --color-text-secondary: var(--color-dark-gray);
+}
+
+/* Light theme variations */
+.light-theme {
+  --color-background: var(--color-white);
+  --color-surface: var(--color-light-gray);
+  --color-text: var(--color-text-dark);
+  --color-text-secondary: var(--color-text-muted);
+}

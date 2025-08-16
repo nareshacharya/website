@@ -20,7 +20,7 @@ const Home = () => {
       {/* Intro Section */}
       <section className="intro-section">
         <p>
-          I'm a UX Leader helping global teams design user-centric solutions across insurance, banking, and consumer domains. My passion lies in transforming complex enterprise workflows into intuitive digital experiences.
+          As a Director of Product Design, I lead cross-functional teams to deliver AI-driven enterprise experiences that transform how organizations work. I specialize in design systems, enterprise UX, and executive leadership, with a proven track record of scaling design operations and driving product innovation across complex business domains.
         </p>
       </section>
       <AnimatedCompetencies />

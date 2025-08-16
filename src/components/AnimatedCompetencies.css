@@ -1,13 +1,13 @@
 .competency-tiles {
   padding: 4rem 6rem 6rem 2rem;
-  background: #eef6ff;
+  background: transparent;
   text-align: center;
 }
 
 .competency-tiles h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #222;
+  color: var(--color-text-dark);
 }
 
 .competency-grid {
@@ -19,34 +19,47 @@
 }
 
 .competency-tile {
-  background: white;
+  background: transparent;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: var(--transition-normal);
+  border: 1px solid var(--color-gray);
 }
 
 .competency-tile:hover {
   transform: translateY(-8px);
+  box-shadow: none;
+  border-color: var(--color-accent-primary);
 }
 
 .tile-icon {
   font-size: 3rem;
-  color: #27a1f3;
+  color: var(--color-accent-primary);
 }
+
 .tile-icon img {
   width: 10rem;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(86%) saturate(2618%)
+    hue-rotate(349deg) brightness(102%) contrast(98%);
 }
 
 .competency-tile p {
   font-size: 1.3rem;
   font-weight: 300;
-  color: #333;
+  color: var(--color-text-dark);
   line-height: 1.2;
   margin: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competency-tiles {
+    padding: 2rem;
+  }
 }
 
 /* Responsive */

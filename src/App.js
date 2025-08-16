@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
+import Header from './components/Header';
+import FloatingNav from './components/FloatingNav';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
@@ -27,7 +28,8 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Navbar />
+      <Header />
+      <FloatingNav />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Naresh Pentapati - Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based portfolio website showcasing the work and expertise of Naresh Pentapati, a UX Leader specializing in public safety systems and enterprise UX solutions.
+
+🌐 **Live Website**: [https://nareshpentapati.in](https://nareshpentapati.in)
+
+## About
+
+This portfolio showcases 10+ UX projects spanning across:
+
+- **Public Safety & GovTech**: Emergency management, law enforcement, and citizen safety solutions
+- **Enterprise UX**: Insurance and banking applications, particularly Pega-based systems
+- **Design Leadership**: UX strategy, design systems, and organizational transformation
+
+## Features
+
+- ✨ **Interactive Portfolio**: Filterable project showcase with detailed case studies
+- 📱 **Responsive Design**: Mobile-first approach with smooth animations
+- 🎨 **Personal Gallery**: Interactive photo grid showcasing interests beyond design
+- 📝 **Blog System**: Articles on UX strategy, design leadership, and industry insights
+- 🎭 **Smooth Animations**: Framer Motion and AOS for engaging user experience
+
+## Tech Stack
+
+- **Frontend**: React 19.1.0, React Router 7.5.3
+- **Build Tool**: Create React App with CRACO for webpack customization
+- **Styling**: CSS Modules with custom animations
+- **Libraries**:
+  - Framer Motion (animations)
+  - React Markdown (blog content)
+  - React Icons (UI icons)
+  - AOS (scroll animations)
+  - React CountUp (animated statistics)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nareshacharya/website.git
+   cd website
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode with hot reloading.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Launches the test runner in interactive watch mode.
 
-### `npm run eject`
+### `npm run deploy`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Builds and deploys the app to GitHub Pages.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── components/          # Reusable UI components
+│   ├── AnimatedCompetencies.js
+│   ├── Certifications.js
+│   ├── Footer.js
+│   ├── HeroMinimal.js
+│   ├── Navbar.js
+│   └── ...
+├── pages/              # Main page components
+│   ├── Home.js
+│   ├── About.js
+│   ├── Portfolio.js
+│   ├── Blogs.js
+│   ├── Contact.js
+│   ├── blogs/          # Blog detail pages
+│   └── projects/       # Project case study pages
+└── App.js             # Main app component with routing
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+The website is automatically deployed to GitHub Pages using the `gh-pages` package. To deploy:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run deploy
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Portfolio Highlights
 
-### Code Splitting
+### Public Safety Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Crowd Management**: Real-time crowd monitoring with GIS and event operations
+- **Disaster Management**: Emergency resource mapping and response planning
+- **Crime Analytics**: Predictive insights with heatmaps and data visualization
+- **Investigation Analytics**: Link analysis and case mapping for law enforcement
 
-### Analyzing the Bundle Size
+### Enterprise UX Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Crum & Forster**: Pega Constellation-aligned underwriting workbench
+- **TAL Insurance**: Service and underwriting portal redesign
+- **ASB**: UX assessment and design system standardization
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Email**: pentapati.naresh@gmail.com
+- **LinkedIn**: [linkedin.com/in/naresh-pentapati](https://linkedin.com/in/naresh-pentapati)
+- **GitHub**: [github.com/nareshacharya](https://github.com/nareshacharya)
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is personal portfolio website. All content and designs are proprietary.

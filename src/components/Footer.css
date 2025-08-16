@@ -1,8 +1,9 @@
 .main-footer {
-  background-color: #33332c;
-  color: #f5f5f5;
+  background: transparent;
+  color: var(--color-text-dark);
   padding: 6rem 2rem 6rem;
   font-family: "Montserrat", sans-serif;
+  border-top: 1px solid var(--color-gray);
 }
 
 .footer-content {
@@ -16,17 +17,18 @@
 .footer-left h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--color-text-dark);
 }
 
 .footer-email {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #00aaff;
+  color: var(--color-accent-primary);
 }
 
 .footer-location {
   font-size: 0.95rem;
-  color: #aaa;
+  color: var(--color-dark-gray);
 }
 
 .footer-right ul {
@@ -39,14 +41,15 @@
 }
 
 .footer-right a {
-  color: #f5f5f5;
+  color: var(--color-text-dark);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
+  transition: var(--transition-fast);
 }
 
 .footer-right a:hover {
-  color: #00aaff;
+  color: var(--color-accent-primary);
 }
 
 .footer-bottom {
@@ -55,19 +58,20 @@
   flex-wrap: wrap;
   max-width: 1280px;
   margin: 0 auto;
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--color-primary-medium);
   padding-top: 1rem;
   font-size: 0.85rem;
 }
 
 .footer-meta a {
-  color: #999;
+  color: var(--color-medium-gray);
   margin-right: 1.5rem;
   text-decoration: none;
+  transition: var(--transition-fast);
 }
 
 .footer-meta a:hover {
-  color: #00aaff;
+  color: var(--color-accent-primary);
 }
 
 @media (max-width: 768px) {

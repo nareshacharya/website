@@ -1,12 +1,12 @@
 .contact-section {
   height: 70vh;
-  background: #1f2a36; /* deep blue-gray */
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
-  color: #fff;
+  color: var(--color-text-dark);
   padding: 2rem;
 }
 
@@ -19,6 +19,7 @@
   font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 3rem;
+  color: var(--color-text-light);
 }
 
 .contact-icons {
@@ -28,14 +29,14 @@
 }
 
 .contact-icons a {
-  color: #fff;
+  color: var(--color-text-light);
   font-size: 4rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: var(--transition-normal);
 }
 
 .contact-icons a:hover {
   transform: scale(1.1);
-  color: #00aaff;
+  color: var(--color-accent-primary);
 }
 
 /* Responsive adjustments */
