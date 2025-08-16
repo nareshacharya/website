@@ -1,0 +1,196 @@
+.about-grid {
+  padding: 0 var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+  max-width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  min-height: 100vh;
+}
+
+.about-grid h1 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-grid p {
+  font-family: "Oregano", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-top: var(--spacing-sm);
+  font-weight: 400;
+  color: var(--color-dark-gray);
+  width: 100%;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: var(--spacing-sm);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: clamp(300px, 40vw, 550px);
+  cursor: pointer;
+  border: 2px solid var(--color-primary-medium);
+  transition: var(--transition-normal);
+}
+
+.tile:hover {
+  border-color: var(--color-accent-primary);
+  box-shadow: none;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.tile:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  padding: var(--spacing-sm);
+  transition: var(--transition-normal);
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--color-accent-primary);
+}
+
+.overlay p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-top: 0.5rem;
+  color: var(--color-text-dark);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  padding: var(--spacing-md);
+}
+
+.modal-content {
+  position: relative;
+  background: transparent;
+  padding: var(--spacing-md);
+  max-width: min(90%, 600px);
+  max-height: 90vh;
+  overflow: auto;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: none;
+  border: 1px solid var(--color-primary-medium);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--color-accent-primary);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.modal-content p {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  color: var(--color-dark-gray);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-accent-primary);
+  transition: var(--transition-fast);
+}
+
+.close:hover {
+  color: var(--color-accent-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-grid {
+    padding: 0 var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .tile {
+    height: clamp(250px, 50vw, 400px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-grid {
+    padding: 0 var(--spacing-sm) var(--spacing-md) var(--spacing-sm);
+  }
+
+  .modal {
+    padding: var(--spacing-sm);
+  }
+
+  .modal-content {
+    padding: var(--spacing-sm);
+    max-width: 95%;
+  }
+
+  .tile {
+    height: 300px;
+  }
+}

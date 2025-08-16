@@ -98,6 +98,9 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-wrapper">
+      <div className="page-hero">
+        <h1>My Work</h1>
+      </div>
       <div className="portfolio-filter">
         <button onClick={() => setFilter('all')} className={filter === 'all' ? 'active' : ''}>All</button>
         <button onClick={() => setFilter('public')} className={filter === 'public' ? 'active' : ''}>Public Safety</button>

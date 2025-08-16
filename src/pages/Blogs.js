@@ -45,7 +45,9 @@ const Blogs = () => {
 
   return (
     <div className="blog-wrapper">
-      <h1>Articles & Writing</h1>
+      <div className="page-hero">
+        <h1>Articles & Writing</h1>
+      </div>
 
       <div className="blog-filters">
         <button onClick={() => setActiveTag(null)} className={!activeTag ? 'active' : ''}>All</button>

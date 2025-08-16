@@ -4,9 +4,8 @@ import './Vision.css';
 const Vision = () => {
   return (
     <div className="vision-wrapper">
-      <div className="vision-hero">
+      <div className="page-hero">
         <h1>Vision & Philosophy</h1>
-        <p className="vision-subtitle">Designing the future of digital experiences through human-centered innovation</p>
       </div>
 
       <div className="vision-content">

@@ -5,6 +5,9 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 const Contact = () => {
   return (
     <section className="contact-section">
+      <div className="page-hero">
+        <h1>Contact</h1>
+      </div>
       <div className="contact-overlay">
         <div className="contact-content">
           <p className="intro">

@@ -1,5 +1,5 @@
 .portfolio-wrapper {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: var(--spacing-md);
   font-family: "Montserrat", sans-serif;
@@ -7,9 +7,24 @@
   min-height: 100vh;
 }
 
+.page-hero {
+  text-align: center;
+  padding: 120px 0 80px;
+}
+
+.page-hero h1 {
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
 .portfolio-filter {
   text-align: center;
   margin-bottom: var(--spacing-md);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-filter button {

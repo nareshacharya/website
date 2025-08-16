@@ -37,9 +37,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blogs" element={<Blogs />} />
+        {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/vision" element={<Vision />} />
-        <Route path="/blogs/:blogId" element={<BlogDetail />} />
+        {/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
         <Route path="*" element={<NotFound />} />
         {/* Project Detail Pages */}
         <Route path="/portfolio/crowd-management" element={<CrowdManagement />} />

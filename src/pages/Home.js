@@ -104,15 +104,134 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="intro-section">
-        <p>
-          As a Director of Product Design, I lead cross-functional teams to deliver AI-driven enterprise experiences that transform how organizations work. I specialize in design systems, enterprise UX, and executive leadership, with a proven track record of scaling design operations and driving product innovation across complex business domains.
-        </p>
+      {/* Transformational Projects Section */}
+      <section className="transformational-projects-section">
+        <div className="projects-content">
+          <div className="projects-header">
+            <h2>Transformational Projects</h2>
+            <p className="projects-subtitle">
+              Strategic design leadership that drives business transformation and creates measurable impact across industries and user segments.
+            </p>
+          </div>
+          
+          <div className="projects-grid">
+            <div className="project-card">
+              <div className="project-image">
+                <img src={process.env.PUBLIC_URL + '/images/hekla-project.jpg'} alt="Hekla AI Project" />
+              </div>
+              
+              <div className="project-content">
+                <div className="project-header">
+                  <div className="project-title">
+                    <h3>Hekla AI</h3>
+                    <span className="project-type">AI-Powered App Builder</span>
+                  </div>
+                  <img src={process.env.PUBLIC_URL + '/images/hekla-logo.png'} alt="Hekla AI" className="project-logo" />
+                </div>
+                
+                <p className="project-description">
+                  Revolutionary platform enabling non-technical users to build sophisticated applications through natural language interfaces. Led the complete design strategy and product vision, resulting in breakthrough user adoption and significant revenue generation.
+                </p>
+                
+                <div className="project-metrics">
+                  <div className="metric">
+                    <div className="metric-value">$2.5M ARR Generated</div>
+                    <div className="metric-label">Business Impact</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">18 months</div>
+                    <div className="metric-label">Timeline</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">25 Specialists</div>
+                    <div className="metric-label">Team Size</div>
+                  </div>
+                </div>
+                
+                <a href="#" className="case-study-btn">View Detailed Case Study</a>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <img src={process.env.PUBLIC_URL + '/images/beetle-project.jpg'} alt="Beetle Platform Project" />
+              </div>
+              
+              <div className="project-content">
+                <div className="project-header">
+                  <div className="project-title">
+                    <h3>Beetle Platform</h3>
+                    <span className="project-type">Low-Code Development</span>
+                  </div>
+                  <img src={process.env.PUBLIC_URL + '/images/beetle-logo.png'} alt="Beetle Platform" className="project-logo" />
+                </div>
+                
+                <p className="project-description">
+                  Enterprise-grade low-code platform for Pega Constellation, accelerating custom component development by 300%. Architected the entire user experience from concept to deployment, transforming how enterprise teams build applications.
+                </p>
+                
+                <div className="project-metrics">
+                  <div className="metric">
+                    <div className="metric-value">300% Faster Development</div>
+                    <div className="metric-label">Business Impact</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">12 months</div>
+                    <div className="metric-label">Timeline</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">18 Engineers</div>
+                    <div className="metric-label">Team Size</div>
+                  </div>
+                </div>
+                
+                <a href="#" className="case-study-btn">View Detailed Case Study</a>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <img src={process.env.PUBLIC_URL + '/images/smart-cities-project.jpg'} alt="Smart Cities Initiative Project" />
+              </div>
+              
+              <div className="project-content">
+                <div className="project-header">
+                  <div className="project-title">
+                    <h3>Smart Cities Initiative</h3>
+                    <span className="project-type">Public Safety Innovation</span>
+                  </div>
+                  <img src={process.env.PUBLIC_URL + '/images/smart-cities-logo.png'} alt="Smart Cities Initiative" className="project-logo" />
+                </div>
+                
+                <p className="project-description">
+                  Transformative digital solutions for urban infrastructure, impacting over 2 million citizens through intelligent design. Spearheaded cross-functional teams to create safer urban environments using IoT, AI, and data analytics.
+                </p>
+                
+                <div className="project-metrics">
+                  <div className="metric">
+                    <div className="metric-value">2M+ Citizens Served</div>
+                    <div className="metric-label">Business Impact</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">24 months</div>
+                    <div className="metric-label">Timeline</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">35 Specialists</div>
+                    <div className="metric-label">Team Size</div>
+                  </div>
+                </div>
+                
+                <a href="#" className="case-study-btn">View Detailed Case Study</a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="portfolio-cta">
+            <a href="/portfolio" className="portfolio-btn">Explore Complete Portfolio</a>
+          </div>
+        </div>
       </section>
-      <AnimatedCompetencies />
-      <Certifications />
-      <SneekPeek />
     </>
   );
 };
