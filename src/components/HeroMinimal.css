@@ -88,21 +88,49 @@
   color: var(--color-accent-primary);
 }
 
-.hero-icons {
+.hero-ctas {
   display: flex;
-  gap: 2rem;
-  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  gap: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.hero-icons a {
-  color: var(--color-text-secondary);
-  transition: var(--transition-fast);
+.cta-button {
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-decoration: none;
+  transition: var(--transition-normal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  border: 2px solid transparent;
 }
 
-.hero-icons a:hover {
+.cta-button.primary {
+  background: var(--color-accent-primary);
+  color: var(--color-white);
+  border-color: var(--color-accent-primary);
+}
+
+.cta-button.primary:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
   color: var(--color-accent-primary);
+  border-color: var(--color-accent-primary);
+}
+
+.cta-button.secondary:hover {
+  background: var(--color-accent-primary);
+  color: var(--color-white);
   transform: translateY(-2px);
 }
 
@@ -153,9 +181,10 @@
     margin: 2rem 0;
   }
 
-  .hero-icons {
+  .hero-ctas {
     justify-content: center;
     margin: 2rem 0;
+    gap: 1rem;
   }
 }
 
@@ -185,9 +214,14 @@
     min-width: auto;
   }
 
-  .hero-icons {
-    gap: 3rem;
-    font-size: 2rem;
+  .hero-ctas {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    min-width: 180px;
   }
 }
 
@@ -209,9 +243,14 @@
     font-size: 2rem;
   }
 
-  .hero-icons {
-    gap: 2rem;
-    font-size: 1.8rem;
+  .hero-ctas {
+    gap: 0.8rem;
+  }
+
+  .cta-button {
+    min-width: 160px;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
 

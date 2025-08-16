@@ -8,7 +8,8 @@ const FloatingNav = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/portfolio', label: 'Portfolio' },
+    { path: '/portfolio', label: 'My Work' },
+    { path: '/vision', label: 'Vision & Philosophy' },
     { path: '/blogs', label: 'Blogs' },
     { path: '/contact', label: 'Contact' }
   ];

@@ -23,6 +23,7 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/blogs/BlogDetail';
 import Contact from './pages/Contact';
+import Vision from './pages/Vision';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/vision" element={<Vision />} />
         <Route path="/blogs/:blogId" element={<BlogDetail />} />
         <Route path="*" element={<NotFound />} />
         {/* Project Detail Pages */}

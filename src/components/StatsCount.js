@@ -3,9 +3,9 @@ import { useInView } from 'react-intersection-observer';
 import './StatsCount.css';
 
 const stats = [
-  { label: 'Projects', end: 80 },
-  { label: 'Domains', end: 7 },
-  { label: 'Experience-led', end: 100, suffix: '%' }
+  { label: 'Business Impact', end: 10, suffix: 'M+', prefix: '$' },
+  { label: 'Team Members', end: 30, suffix: '+' },
+  { label: 'Years Experience', end: 18, suffix: '+' }
 ];
 
 export default function StatsCount() {
