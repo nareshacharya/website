@@ -15,7 +15,11 @@ const DisasterManagement = () => {
           An operational command system enabling government agencies to plan, coordinate, and respond effectively during large-scale emergencies.
         </p>
       </div>
-
+       <img 
+          src={process.env.PUBLIC_URL + '/images/disaster-1.png'} 
+          alt="Beetle Landing"
+          style={{ width: '100%', height: 'auto', borderRadius: '18px', marginBottom: '2rem', objectFit: 'cover' }}
+        />
       <div className="case-section">
         <h2><FaBullseye className="section-icon" /> The Mission</h2>
         <p>
@@ -79,8 +83,13 @@ const DisasterManagement = () => {
       <div className="case-section">
         <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
-          <img src="/images/disaster-map.jpg" alt="Map View with Resources" />
-          <img src="/images/disaster-timeline.jpg" alt="Timeline Planning UI" />
+          <img src="/images/disaster-1.png" alt="Disaster Management IDE Screenshot" />
+           <img src="/images/disaster-2.png" alt="Disaster Management Screenshot 1" />
+           <img src="/images/disaster-3.png" alt="Disaster Management Screenshot 2" />
+           <img src="/images/disaster-4.png" alt="Disaster Management Screenshot 3" />
+           <img src="/images/disaster-5.png" alt="Disaster Management Screenshot 4" />
+           <img src="/images/disaster-6.png" alt="Disaster Management Screenshot 5" />
+           <img src="/images/disaster-7.png" alt="Disaster Management Screenshot 6" />
         </div>
       </div>
     </section>

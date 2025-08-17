@@ -24,7 +24,11 @@ const CrowdManagement = () => {
           A real-time surveillance and crowd analytics platform used by command centers to monitor crowd density, trigger proactive alerts, and prevent chaos at public gatherings.
         </p>
       </div>
-
+       <img 
+          src={process.env.PUBLIC_URL + '/images/crowd-1.png'} 
+          alt="Beetle Landing"
+          style={{ width: '100%', height: 'auto', borderRadius: '18px', marginBottom: '2rem', objectFit: 'cover' }}
+        />
       <div className="case-section">
         <h2><FaUsers className="section-icon" /> The Challenge</h2>
         <p>
@@ -96,8 +100,12 @@ const CrowdManagement = () => {
       <div className="case-section">
         <h2><FaDesktop className="section-icon" /> Screenshots</h2>
         <div className="case-images">
-          <img src="/images/crowd-wireframe.jpg" alt="Early Wireframe View" />
-          <img src="/images/crowd-heatmap.jpg" alt="Final Heatmap Interface" />
+           <img src="/images/crowd-7.png" alt="Crowd Management Login" />
+           <img src="/images/crowd-1.png" alt="Crowd Management Dashboard" />
+           <img src="/images/crowd-2.png" alt="Crowd Management Heatmap" />
+           <img src="/images/crowd-3.png" alt="Crowd Management Alerts" />
+           <img src="/images/crowd-4.png" alt="Crowd Management Reports" />
+           <img src="/images/crowd-5.png" alt="Crowd Management Settings" />
         </div>
       </div>
     </section>

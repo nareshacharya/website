@@ -7,16 +7,16 @@ const allProjects = [
   {
     id: 'hekla',
     title: 'Hekla',
-    category: 'flagship',
-    tech: ['AI', 'App Generation', 'Pega', 'Platform'],
+    category: 'enterprise',
+    tech: ['AI', 'App Generation', 'Pega', 'Platform', 'Enterprise UX'],
     description: 'Hekla is a next-gen incident response and public safety platform, integrating AI-driven analytics, real-time data, and seamless field coordination for agencies and enterprises.',
     image: process.env.PUBLIC_URL + '/images/hekla.png'
   },
   {
     id: 'beetle',
     title: 'Beetle',
-    category: 'flagship',
-    tech: [ 'Low-code', 'Case Management', 'Platform'],
+    category: 'enterprise',
+    tech: [ 'Low-code', 'Case Management', 'Platform', 'Enterprise UX'],
     description: 'Beetle is an AI-powered case management and automation suite, streamlining investigations, evidence handling, and workflow orchestration for modern agencies.',
     image: process.env.PUBLIC_URL + '/images/beetle-landing.png'
   },
@@ -44,38 +44,8 @@ const allProjects = [
     description: 'Streamlined beat scheduling and officer tracking with a smart patrol planner. Improved on-ground efficiency and visibility for supervisors.',
     image: process.env.PUBLIC_URL + '/images/patrol.jpg'
   },
-  {
-    id: 'crime-analytics',
-    title: 'Crime Analytics',
-    category: 'public',
-    tech: ['GIS', 'Heatmaps', 'Predictive Insights', 'Public Safety'],
-    description: 'Visualized crime trends using heatmaps, filters, and offender data layers. Helped agencies spot patterns and allocate resources more effectively.',
-    image: process.env.PUBLIC_URL + '/images/crime.jpg'
-  },
-  {
-    id: 'investigation-analytics',
-    title: 'Investigation Analytics',
-    category: 'public',
-    tech: ['Link Analysis', 'Data Visualization', 'AI Insights', 'Graph UI'],
-    description: 'Designed a unified dashboard that helped officers link people, places, and evidence seamlessly. Enabled faster, structured investigations with visual timelines and smart case mapping.',
-    image: process.env.PUBLIC_URL + '/images/investigation.jpg'
-  },
-  {
-    id: 'suspect-tracking',
-    title: 'Suspect & Vehicle Tracking',
-    category: 'public',
-    tech: ['AI Video', 'Facial Recognition', 'Path Tracing', 'Live Surveillance'],
-    description: 'Built a real-time system for tracking vehicles and suspects across city zones. Gave field teams instant intel through live maps, alerts, and historical movement.',
-    image: process.env.PUBLIC_URL + '/images/suspect.jpg'
-  },
-  {
-    id: 'women-safety',
-    title: 'Women Safety App',
-    category: 'public',
-    tech: ['Mobile App', 'SOS Alerts', 'Geofencing', 'Secure UX'],
-    description: 'Created a one-touch emergency app with live location sharing and silent alerts. Empowered users and gave responders critical visibility during distress calls.',
-    image: process.env.PUBLIC_URL + '/images/women.jpg'
-  },
+
+
   {
     id: 'crum-underwriting',
     title: 'Crum & Forster – Underwriting Workbench',
