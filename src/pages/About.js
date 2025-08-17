@@ -34,8 +34,23 @@ const About = () => {
         </div>
         
         <div className="hero-ctas">
-          <a href="#" className="cta-btn primary">Download Resume</a>
-          <a href="#" className="cta-btn secondary">Schedule Coffee Chat</a>
+          <a 
+            href={process.env.PUBLIC_URL + '/images/Naresh_Pentapati_Resume_Product_Design.pdf'}
+            className="cta-btn primary"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Resume
+          </a>
+          <a
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Coffee%20Chat%20with%20Naresh%20Pentapati&details=Let%27s%20connect%20for%20a%20virtual%20coffee%20chat!%20Feel%20free%20to%20adjust%20the%20time%20as%20needed.&dates=20250820T090000Z/20250820T093000Z&ctz=Asia/Kolkata&add=pentapati.naresh@gmail.com"
+            className="cta-btn secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Coffee Chat
+          </a>
         </div>
       </section>
 
