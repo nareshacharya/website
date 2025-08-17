@@ -18,16 +18,16 @@
   --color-cta-text-dark: #000000; /* Black text */
 
   /* Secondary Colors - Sophisticated Accents */
-  --color-accent-primary: #3b82f6; /* Professional blue */
-  --color-accent-secondary: #8b5cf6; /* Elegant purple */
   --color-accent-tertiary: #06b6d4; /* Modern cyan */
   --color-accent-success: #10b981; /* Success green */
   --color-accent-warning: #f59e0b; /* Sophisticated amber */
 
   /* Gradient Variations */
-  --color-accent-light: #60a5fa; /* Light blue */
-  --color-accent-dark: #1d4ed8; /* Dark blue */
-  --color-accent-subtle: #eff6ff; /* Very light blue background */
+  --color-accent-primary: #111111; /* Blackish for monochrome */
+  --color-accent-secondary: #222222; /* Dark grey for monochrome */
+  --color-accent-light: #e5e7eb; /* Light grey */
+  --color-accent-dark: #000000; /* Black */
+  --color-accent-subtle: #f8fafc; /* Very light grey background */
 
   /* Light Theme Neutral Colors */
   --color-white: #ffffff;

@@ -64,173 +64,64 @@ const Home = () => {
         </div>
       </section>
 
-      {/* AI Innovation Leadership Section */}
-      <section className="ai-innovation-section">
-        <div className="ai-innovation-content">
-          <div className="ai-innovation-header">
-            <h2>AI Innovation Leadership</h2>
-            <p className="ai-innovation-subtitle">
-              Pioneering the integration of artificial intelligence into design workflows and user experiences. Leading cross-functional teams to build revolutionary tools that transform how designers and developers create digital products.
-            </p>
-          </div>
-          
-          <div className="ai-tools-grid">
-            <div className="ai-tool-card">
-              <div className="tool-image">
-                <div className="tool-icon hekla-icon">H</div>
-              </div>
-              <div className="tool-header">
-                <h3>Hekla</h3>
-                <div className="tool-badges">
-                  <span className="impact-badge high">High Impact</span>
-                  <span className="term-badge short">Short Term</span>
-                </div>
-              </div>
-              <p className="tool-description">
-                AI-powered app builder revolutionizing product development workflows
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Transformational Projects Section */}
       <section className="transformational-projects-section">
         <div className="projects-content">
           <div className="projects-header">
-            <h2>Transformational Projects</h2>
+            <h2>My Flagship Products</h2>
             <p className="projects-subtitle">
               Strategic design leadership that drives business transformation and creates measurable impact across industries and user segments.
             </p>
           </div>
           
-          <div className="projects-grid">
-            <div className="project-card">
-              <div className="project-image">
-                <img src={process.env.PUBLIC_URL + '/images/hekla-project.jpg'} alt="Hekla AI Project" />
-              </div>
-              
-              <div className="project-content">
-                <div className="project-header">
-                  <div className="project-title">
-                    <h3>Hekla AI</h3>
-                    <span className="project-type">AI-Powered App Builder</span>
-                  </div>
-                  <img src={process.env.PUBLIC_URL + '/images/hekla-logo.png'} alt="Hekla AI" className="project-logo" />
-                </div>
-                
-                <p className="project-description">
-                  Revolutionary platform enabling non-technical users to build sophisticated applications through natural language interfaces. Led the complete design strategy and product vision, resulting in breakthrough user adoption and significant revenue generation.
-                </p>
-                
-                <div className="project-metrics">
-                  <div className="metric">
-                    <div className="metric-value">$2.5M ARR Generated</div>
-                    <div className="metric-label">Business Impact</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">18 months</div>
-                    <div className="metric-label">Timeline</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">25 Specialists</div>
-                    <div className="metric-label">Team Size</div>
-                  </div>
-                </div>
-                
-                <a href="#" className="case-study-btn">View Detailed Case Study</a>
-              </div>
-            </div>
-            
-            <div className="project-card">
-              <div className="project-image">
-                <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Beetle Platform Project" />
-              </div>
-              
-              <div className="project-content">
-                <div className="project-header">
-                  <div className="project-title">
-                    <h3>🐞 Beetle Platform</h3>
-                    <span className="project-type">Strategic Innovation & Low-Code Development</span>
-                  </div>
-                  <div className="project-logo-placeholder">
-                    <div className="beetle-icon-small">B</div>
-                  </div>
-                </div>
-                
-                <p className="project-description">
-                  <strong>My Strategic Innovation for Pega Constellation:</strong> Conceived Beetle as a proprietary low-code form builder to position our company ahead in Pega consulting. Bridges the gap between design (Figma) and Pega DX API implementation, serving as a competitive differentiator with enterprise-ready components, built-in accessibility, and Constellation theming.
-                </p>
-                
-                <div className="project-highlights">
-                  <div className="highlight-item">
-                    <strong>Vision:</strong> Strategic accelerator that differentiates us in competitive market
-                  </div>
-                  <div className="highlight-item">
-                    <strong>Innovation:</strong> Import Figma → Export React + TypeScript components
-                  </div>
-                  <div className="highlight-item">
-                    <strong>My Role:</strong> Brainchild & Visionary - Designed as strategic innovation and competitive edge
-                  </div>
-                </div>
-                
-                <div className="project-metrics">
-                  <div className="metric">
-                    <div className="metric-value">90% Faster Creation</div>
-                    <div className="metric-label">Business Impact</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">4x Productivity</div>
-                    <div className="metric-label">Delivery Speed</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">$330k+ Annual Savings</div>
-                    <div className="metric-label">Client Value</div>
-                  </div>
-                </div>
-                
-                <a href="#" className="case-study-btn">View Strategic Innovation Case Study</a>
-              </div>
-            </div>
-            
-            <div className="project-card">
-              <div className="project-image">
-                <img src={process.env.PUBLIC_URL + '/images/smart-cities-project.jpg'} alt="Smart Cities Initiative Project" />
-              </div>
-              
-              <div className="project-content">
-                <div className="project-header">
-                  <div className="project-title">
-                    <h3>Smart Cities Initiative</h3>
-                    <span className="project-type">Public Safety Innovation</span>
-                  </div>
-                  <img src={process.env.PUBLIC_URL + '/images/smart-cities-logo.png'} alt="Smart Cities Initiative" className="project-logo" />
-                </div>
-                
-                <p className="project-description">
-                  Transformative digital solutions for urban infrastructure, impacting over 2 million citizens through intelligent design. Spearheaded cross-functional teams to create safer urban environments using IoT, AI, and data analytics.
-                </p>
-                
-                <div className="project-metrics">
-                  <div className="metric">
-                    <div className="metric-value">2M+ Citizens Served</div>
-                    <div className="metric-label">Business Impact</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">24 months</div>
-                    <div className="metric-label">Timeline</div>
-                  </div>
-                  <div className="metric">
-                    <div className="metric-value">35 Specialists</div>
-                    <div className="metric-label">Team Size</div>
-                  </div>
-                </div>
-                
-                <a href="#" className="case-study-btn">View Detailed Case Study</a>
-              </div>
-            </div>
-          </div>
           
+
+     {/* Hekla App Flagship Section */}
+      <div className="hekla-flagship-section">
+        <div className="hekla-flagship-row">
+          <div className="hekla-flagship-image-wrapper">
+            <img src={process.env.PUBLIC_URL + '/images/hekla.png'} alt="Hekla AI App Builder" className="hekla-flagship-image" />
+          </div>
+          <div className="hekla-flagship-content">
+            <h2 className="hekla-title">Hekla <br />AI App Builder</h2>
+            <div className="hekla-subtitle">First-of-its-kind AI-powered platform that transforms natural language into enterprise-grade Pega apps.</div>
+            <div className="hekla-description">
+              I spearheaded the vision, design, and full development of Hekla — a flagship innovation redefining Pega consulting. With unmatched speed, efficiency, and ROI, it delivers apps in hours instead of weeks, setting a new benchmark in the industry.
+            </div>
+            <div className="hekla-stats-row">
+              <div className="hekla-stat"><span className="stat-value">10x</span><span className="stat-label">Faster Delivery</span></div>
+              <div className="hekla-stat"><span className="stat-value">$2.5M+</span><span className="stat-label">Business Impact</span></div>
+              <div className="hekla-stat"><span className="stat-value">100% AI</span><span className="stat-label">No-Code Apps</span></div>
+            </div>
+            <a href="#" className="cta-button primary hekla-cta">View Product</a>
+          </div>
+        </div>
+      </div>
+
+     {/* Beetle App Flagship Section */}
+      <div className="hekla-flagship-section">
+        <div className="hekla-flagship-row">
+          <div className="hekla-flagship-image-wrapper">
+            <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Hekla AI App Builder" className="hekla-flagship-image" />
+          </div>
+          <div className="hekla-flagship-content">
+            <h2 className="hekla-title">Beetle  <br />Low-Code Accelerator</h2>
+            <div className="hekla-subtitle">Proprietary low-code platform bridging Figma design and Pega DX API for rapid, accessible enterprise app delivery.</div>
+            <div className="hekla-description">
+              Conceived and built Beetle to give our team a competitive edge in Pega consulting. Enables 4x faster delivery, seamless Figma-to-code workflow, and enterprise-ready, accessible components.
+            </div>
+            <div className="hekla-stats-row">
+              <div className="hekla-stat"><span className="stat-value">4x</span><span className="stat-label">Faster Delivery</span></div>
+              <div className="hekla-stat"><span className="stat-value">$330k+</span><span className="stat-label">Annual Client Savings</span></div>
+              <div className="hekla-stat"><span className="stat-value">100%</span><span className="stat-label">Accessible Components</span></div>
+            </div>
+            <a href="#" className="cta-button primary hekla-cta">View Product</a>
+          </div>
+        </div>
+      </div>
+
+
           <div className="portfolio-cta">
             <a href="/portfolio" className="portfolio-btn">Explore Complete Portfolio</a>
           </div>

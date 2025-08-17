@@ -14,7 +14,7 @@
 }
 
 .about-grid p {
-  font-family: "Oregano", cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: clamp(1.2rem, 3vw, 1.5rem);

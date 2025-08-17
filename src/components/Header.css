@@ -41,7 +41,7 @@
 .time {
   color: var(--color-accent-primary);
   font-weight: 600;
-  font-family: "Courier New", monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Responsive Design */

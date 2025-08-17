@@ -2,14 +2,14 @@
   display: flex;
   min-height: 100vh;
   background: transparent;
-  font-family: "Inter", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   align-items: stretch;
 }
 
 .hero-left {
   flex: 0.45;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   overflow: hidden;
   padding: 0;
@@ -17,7 +17,7 @@
 
 .hero-left img {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   object-fit: cover;
   border-radius: 0;
   box-shadow: none;
@@ -35,7 +35,7 @@
 }
 
 .intro-text h1 {
-  font-family: "Inter", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: clamp(2.8rem, 5vw, 4.5rem);
   margin: 0 0 2rem 0;
@@ -112,7 +112,7 @@
   justify-content: center;
   min-width: 160px;
   border: 2px solid transparent;
-  font-family: "Inter", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 
@@ -261,6 +261,6 @@
 
 .gradient-background {
   background: transparent;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   width: 100%;
 }
