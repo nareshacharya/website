@@ -7,6 +7,7 @@ import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AnimatedCompetencies from '../components/AnimatedCompetencies';
 import Certifications from '../components/Certifications';
+import CompetenciesSection from '../components/CompetenciesSection';
 
 const Home = () => {
   const controls = useAnimation();
@@ -64,6 +65,7 @@ const Home = () => {
         </div>
       </section>
 
+<CompetenciesSection />
 
       {/* Transformational Projects Section */}
       <section className="transformational-projects-section">

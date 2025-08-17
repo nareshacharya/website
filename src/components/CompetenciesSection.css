@@ -1,0 +1,92 @@
+.competencies-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 8px;
+}
+
+.competencies-header h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 6rem;
+  color: var(--color-text, #111);
+}
+
+.competencies-subtitle {
+  font-size: 1.15rem;
+  color: var(--color-secondary, #444);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.competencies-core-label,
+.competencies-technical-label {
+  font-weight: 700;
+  color: var(--color-text, #111);
+}
+.competencies-section {
+  background: var(--color-bg, #fff);
+  color: var(--color-text, #111);
+  padding: 64px 0 48px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.competencies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.competencies-column {
+  flex: 1 1 340px;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+.competencies-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+  color: var(--color-text, #111);
+}
+
+.competencies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competency-item {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+}
+
+.competency-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--color-text, #111);
+}
+
+.competency-desc {
+  font-size: 1rem;
+  color: var(--color-secondary, #444);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .competencies-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+  }
+  .competencies-column {
+    max-width: 100%;
+  }
+}

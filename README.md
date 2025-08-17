@@ -6,17 +6,20 @@ A React-based portfolio website showcasing the work and expertise of Naresh Pent
 
 ## About
 
-This portfolio showcases 10+ UX projects spanning across:
+This portfolio showcases flagship innovations and 10+ UX projects spanning:
 
+- **Flagship Accelerators**: Hekla (AI App Builder for Pega), Beetle (Enterprise Form Builder for Pega Constellation)
 - **Public Safety & GovTech**: Emergency management, law enforcement, and citizen safety solutions
-- **Enterprise UX**: Insurance and banking applications, particularly Pega-based systems
+- **Enterprise UX**: Insurance, banking, and Pega-based digital transformation
 - **Design Leadership**: UX strategy, design systems, and organizational transformation
 
 ## Features
 
 - ✨ **Interactive Portfolio**: Filterable project showcase with detailed case studies
-- 📱 **Responsive Design**: Mobile-first approach with smooth animations
-- 🎨 **Personal Gallery**: Interactive photo grid showcasing interests beyond design
+- � **Flagship Projects**: Dedicated pages for Hekla and Beetle, with in-depth stories and business impact
+- 📄 **Resume Download**: Downloadable PDF resume from the About page
+- ☕ **Coffee Chat**: One-click Google Calendar invite for virtual meetings
+- 📱 **Responsive Design**: Mobile-first, modern layouts
 - 📝 **Blog System**: Articles on UX strategy, design leadership, and industry insights
 - 🎭 **Smooth Animations**: Framer Motion and AOS for engaging user experience
 
@@ -112,6 +115,11 @@ npm run deploy
 
 ## Portfolio Highlights
 
+### Flagship Accelerators
+
+- **Hekla**: AI-native app builder for Pega. End-to-end innovation—vision, design, build, and rollout by Naresh. Generates React+Next.js apps from natural language, integrates with Pega DX APIs, and enables one-click GitHub publishing.
+- **Beetle**: Enterprise form builder for Pega Constellation. Converts Figma designs to React+TypeScript, drag-and-drop builder, DX API integration, and enterprise compliance. Strategic differentiator for consulting delivery.
+
 ### Public Safety Projects
 
 - **Crowd Management**: Real-time crowd monitoring with GIS and event operations
@@ -133,4 +141,4 @@ npm run deploy
 
 ## License
 
-This project is personal portfolio website. All content and designs are proprietary.
+This project is a personal portfolio website. All content, case studies, and designs are proprietary. Flagship accelerators (Hekla, Beetle) are original IP by Naresh Pentapati.
