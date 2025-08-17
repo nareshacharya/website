@@ -7,6 +7,16 @@
   --color-primary-light: #94a3b8; /* Light blue-gray */
   --color-primary-lightest: #e2e8f0; /* Very light gray */
 
+  /* Monochrome CTA Colors */
+  --color-cta-primary: #000000; /* Black for primary CTAs */
+  --color-cta-primary-hover: #1a1a1a; /* Slightly lighter black on hover */
+  --color-cta-secondary: #ffffff; /* White for secondary CTAs */
+  --color-cta-secondary-hover: #f8f9fa; /* Light gray for secondary hover */
+  --color-cta-border: #e5e7eb; /* Light gray border */
+  --color-cta-border-dark: #374151; /* Dark gray border */
+  --color-cta-text-light: #ffffff; /* White text */
+  --color-cta-text-dark: #000000; /* Black text */
+
   /* Secondary Colors - Sophisticated Accents */
   --color-accent-primary: #3b82f6; /* Professional blue */
   --color-accent-secondary: #8b5cf6; /* Elegant purple */

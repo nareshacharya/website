@@ -30,26 +30,26 @@
 .portfolio-filter button {
   padding: clamp(0.4rem, 2vw, 0.6rem) clamp(1rem, 3vw, 1.5rem);
   margin: 0.5rem;
-  background: transparent;
-  border: 1px solid var(--color-primary-light);
-  border-radius: 20px;
+  background: var(--color-cta-secondary);
+  border: 2px solid var(--color-cta-border);
+  border-radius: 50px; /* Pill shape */
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition-fast);
-  color: var(--color-text-dark);
+  color: var(--color-cta-text-dark);
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 
 .portfolio-filter button:hover {
-  background: transparent;
-  color: var(--color-accent-primary);
-  border-color: var(--color-accent-primary);
+  background: var(--color-cta-secondary-hover);
+  color: var(--color-cta-text-dark);
+  border-color: var(--color-cta-border-dark);
 }
 
 .portfolio-filter button.active {
-  background: transparent;
-  color: var(--color-accent-primary);
-  border-color: var(--color-accent-primary);
+  background: var(--color-cta-primary);
+  color: var(--color-cta-text-light);
+  border-color: var(--color-cta-primary);
 }
 
 .tag-reset {
@@ -58,16 +58,20 @@
 }
 
 .tag-reset button {
-  background: transparent;
-  border: none;
-  color: var(--color-accent-primary);
+  background: var(--color-cta-secondary);
+  border: 2px solid var(--color-cta-border);
+  border-radius: 50px; /* Pill shape */
+  color: var(--color-cta-text-dark);
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   cursor: pointer;
   transition: var(--transition-fast);
+  padding: 0.4rem 1rem;
 }
 
 .tag-reset button:hover {
-  color: var(--color-accent-light);
+  background: var(--color-cta-secondary-hover);
+  color: var(--color-cta-text-dark);
+  border-color: var(--color-cta-border-dark);
 }
 
 .portfolio-list {

@@ -30,25 +30,25 @@
 .blog-filters button {
   margin: 0.3rem;
   padding: 0.5rem 1rem;
-  background: transparent;
-  border: 1px solid var(--color-primary-light);
-  border-radius: 20px;
+  background: var(--color-cta-secondary);
+  border: 2px solid var(--color-cta-border);
+  border-radius: 50px; /* Pill shape */
   font-weight: 500;
   cursor: pointer;
-  color: var(--color-text-dark);
+  color: var(--color-cta-text-dark);
   transition: var(--transition-fast);
 }
 
 .blog-filters button:hover {
-  background: transparent;
-  border-color: var(--color-accent-primary);
-  color: var(--color-accent-primary);
+  background: var(--color-cta-secondary-hover);
+  border-color: var(--color-cta-border-dark);
+  color: var(--color-cta-text-dark);
 }
 
 .blog-filters button.active {
-  background: transparent;
-  color: var(--color-accent-primary);
-  border-color: var(--color-accent-primary);
+  background: var(--color-cta-primary);
+  color: var(--color-cta-text-light);
+  border-color: var(--color-cta-primary);
 }
 
 .blog-list {

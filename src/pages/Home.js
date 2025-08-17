@@ -90,40 +90,6 @@ const Home = () => {
                 AI-powered app builder revolutionizing product development workflows
               </p>
             </div>
-            
-            <div className="ai-tool-card">
-              <div className="tool-image">
-                <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Beetle Low-Code Platform" />
-              </div>
-              <div className="tool-header">
-                <h3>🐞 Beetle</h3>
-                <div className="tool-badges">
-                  <span className="impact-badge high">Strategic Innovation</span>
-                  <span className="term-badge short">Pega Constellation</span>
-                </div>
-              </div>
-              <div className="tool-content">
-                <p className="tool-subtitle">Low-Code Form Builder for Pega Consulting</p>
-                <p className="tool-description">
-                  Proprietary accelerator bridging Figma design to Pega DX API implementation. 
-                  Drag & drop builder with enterprise-ready components and built-in accessibility.
-                </p>
-                <div className="tool-metrics">
-                  <div className="metric-item">
-                    <span className="metric-value">90%</span>
-                    <span className="metric-label">Faster Creation</span>
-                  </div>
-                  <div className="metric-item">
-                    <span className="metric-value">4x</span>
-                    <span className="metric-label">Productivity</span>
-                  </div>
-                  <div className="metric-item">
-                    <span className="metric-value">$330k+</span>
-                    <span className="metric-label">Annual Savings</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -178,38 +144,52 @@ const Home = () => {
             
             <div className="project-card">
               <div className="project-image">
-                <img src={process.env.PUBLIC_URL + '/images/beetle-project.jpg'} alt="Beetle Platform Project" />
+                <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Beetle Platform Project" />
               </div>
               
               <div className="project-content">
                 <div className="project-header">
                   <div className="project-title">
-                    <h3>Beetle Platform</h3>
-                    <span className="project-type">Low-Code Development</span>
+                    <h3>🐞 Beetle Platform</h3>
+                    <span className="project-type">Strategic Innovation & Low-Code Development</span>
                   </div>
-                  <img src={process.env.PUBLIC_URL + '/images/beetle-logo.png'} alt="Beetle Platform" className="project-logo" />
+                  <div className="project-logo-placeholder">
+                    <div className="beetle-icon-small">B</div>
+                  </div>
                 </div>
                 
                 <p className="project-description">
-                  Enterprise-grade low-code platform for Pega Constellation, accelerating custom component development by 300%. Architected the entire user experience from concept to deployment, transforming how enterprise teams build applications.
+                  <strong>My Strategic Innovation for Pega Constellation:</strong> Conceived Beetle as a proprietary low-code form builder to position our company ahead in Pega consulting. Bridges the gap between design (Figma) and Pega DX API implementation, serving as a competitive differentiator with enterprise-ready components, built-in accessibility, and Constellation theming.
                 </p>
                 
-                <div className="project-metrics">
-                  <div className="metric">
-                    <div className="metric-value">300% Faster Development</div>
-                    <div className="metric-label">Business Impact</div>
+                <div className="project-highlights">
+                  <div className="highlight-item">
+                    <strong>Vision:</strong> Strategic accelerator that differentiates us in competitive market
                   </div>
-                  <div className="metric">
-                    <div className="metric-value">12 months</div>
-                    <div className="metric-label">Timeline</div>
+                  <div className="highlight-item">
+                    <strong>Innovation:</strong> Import Figma → Export React + TypeScript components
                   </div>
-                  <div className="metric">
-                    <div className="metric-value">18 Engineers</div>
-                    <div className="metric-label">Team Size</div>
+                  <div className="highlight-item">
+                    <strong>My Role:</strong> Brainchild & Visionary - Designed as strategic innovation and competitive edge
                   </div>
                 </div>
                 
-                <a href="#" className="case-study-btn">View Detailed Case Study</a>
+                <div className="project-metrics">
+                  <div className="metric">
+                    <div className="metric-value">90% Faster Creation</div>
+                    <div className="metric-label">Business Impact</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">4x Productivity</div>
+                    <div className="metric-label">Delivery Speed</div>
+                  </div>
+                  <div className="metric">
+                    <div className="metric-value">$330k+ Annual Savings</div>
+                    <div className="metric-label">Client Value</div>
+                  </div>
+                </div>
+                
+                <a href="#" className="case-study-btn">View Strategic Innovation Case Study</a>
               </div>
             </div>
             

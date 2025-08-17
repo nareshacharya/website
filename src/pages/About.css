@@ -71,14 +71,14 @@
 .hero-ctas {
   display: flex;
   gap: var(--spacing-md);
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-md);
 }
 
 .cta-btn {
   padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
-  border-radius: 8px;
+  border-radius: 50px; /* Pill shape */
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1rem);
   text-decoration: none;
@@ -86,29 +86,31 @@
   border: 2px solid transparent;
   min-width: 160px;
   text-align: center;
+  cursor: pointer;
 }
 
 .cta-btn.primary {
-  background: var(--color-accent-primary);
-  color: var(--color-white);
-  border-color: var(--color-accent-primary);
+  background: var(--color-cta-primary);
+  color: var(--color-cta-text-light);
+  border-color: var(--color-cta-primary);
 }
 
 .cta-btn.primary:hover {
-  background: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
+  background: var(--color-cta-primary-hover);
+  border-color: var(--color-cta-primary-hover);
   transform: translateY(-2px);
 }
 
 .cta-btn.secondary {
-  background: transparent;
-  color: var(--color-accent-primary);
-  border-color: var(--color-accent-primary);
+  background: var(--color-cta-secondary);
+  color: var(--color-cta-text-dark);
+  border-color: var(--color-cta-border);
 }
 
 .cta-btn.secondary:hover {
-  background: var(--color-accent-primary);
-  color: var(--color-white);
+  background: var(--color-cta-secondary-hover);
+  color: var(--color-cta-text-dark);
+  border-color: var(--color-cta-border-dark);
   transform: translateY(-2px);
 }
 
@@ -430,17 +432,18 @@
 .connect-btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: var(--color-accent-primary);
-  color: var(--color-white);
+  background: var(--color-cta-primary);
+  color: var(--color-cta-text-light);
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px; /* Pill shape */
   font-weight: 600;
   font-size: 1.1rem;
   transition: var(--transition-normal);
+  cursor: pointer;
 }
 
 .connect-btn:hover {
-  background: var(--color-accent-dark);
+  background: var(--color-cta-primary-hover);
   transform: translateY(-2px);
 }
 
