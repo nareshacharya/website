@@ -5,6 +5,22 @@ import './Portfolio.css';
 
 const allProjects = [
   {
+    id: 'hekla',
+    title: 'Hekla',
+    category: 'flagship',
+    tech: ['AI', 'App Generation', 'Pega', 'Platform'],
+    description: 'Hekla is a next-gen incident response and public safety platform, integrating AI-driven analytics, real-time data, and seamless field coordination for agencies and enterprises.',
+    image: process.env.PUBLIC_URL + '/images/hekla.png'
+  },
+  {
+    id: 'beetle',
+    title: 'Beetle',
+    category: 'flagship',
+    tech: [ 'Low-code', 'Case Management', 'Platform'],
+    description: 'Beetle is an AI-powered case management and automation suite, streamlining investigations, evidence handling, and workflow orchestration for modern agencies.',
+    image: process.env.PUBLIC_URL + '/images/beetle-landing.png'
+  },
+  {
     id: 'crowd-management',
     title: 'Crowd Management',
     category: 'public',
@@ -115,26 +131,28 @@ const Portfolio = () => {
 
       <div className="portfolio-list">
         {filtered.map(project => (
-          <Link to={`/portfolio/${project.id}`} key={project.id} className="project-tile">
-            <div className="project-header">
-              <img src={project.image} alt={project.title} />
-              <h3>{project.title}</h3>              
+          <Link to={`/portfolio/${project.id}`} key={project.id} className="project-tile project-tile-horizontal">
+            <div className="project-image-col">
+              <img src={project.image} alt={project.title} className="project-image" />
             </div>
-            <div className="project-content">
-              {/* <h3>{project.title}</h3> */}
-              <p>{project.description}</p>
-              <div className="project-tags">
-                {project.tech.map((tag, i) => (
-                  <span
-                    key={i}
-                    className={`tag ${activeTag === tag ? 'active' : ''}`}
-                    onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-                  >
-                    {tag}
-                  </span>
-                ))}
+            <div className="project-content-col">
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                {/* Optionally add stats here if available */}
+                <div className="project-tags">
+                  {project.tech.map((tag, i) => (
+                    <span
+                      key={i}
+                      className={`tag ${activeTag === tag ? 'active' : ''}`}
+                      onClick={e => { e.preventDefault(); setActiveTag(tag === activeTag ? null : tag); }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <span className="project-cta">View Project →</span>
               </div>
-              <span className="project-cta">View Project →</span>
             </div>
           </Link>
         ))}

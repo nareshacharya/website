@@ -25,6 +25,8 @@ import BlogDetail from './pages/blogs/BlogDetail';
 import Contact from './pages/Contact';
 import Vision from './pages/Vision';
 import NotFound from './pages/NotFound';
+import Hekla from './pages/projects/Hekla';
+import Beetle from './pages/projects/Beetle';
 
 function App() {
   return (
@@ -49,9 +51,11 @@ function App() {
         <Route path="/portfolio/investigation-analytics" element={<InvestigationAnalytics />} />
         <Route path="/portfolio/suspect-tracking" element={<SuspectTracking />} />
         <Route path="/portfolio/women-safety" element={<WomenSafety />} />
-        <Route path="/portfolio/crum-underwriting" element={<CrumUnderwriting />} />
-        <Route path="/portfolio/tal-service-portal" element={<TALServicePortal />} />
-        <Route path="/portfolio/asb-ux-assessment" element={<ASBUXAssessment />} />        
+  <Route path="/portfolio/crum-underwriting" element={<CrumUnderwriting />} />
+  <Route path="/portfolio/tal-service-portal" element={<TALServicePortal />} />
+  <Route path="/portfolio/asb-ux-assessment" element={<ASBUXAssessment />} />
+  <Route path="/portfolio/hekla" element={<Hekla />} />
+  <Route path="/portfolio/beetle" element={<Beetle />} />
       </Routes>
       <Footer />
     </Router>

@@ -69,9 +69,9 @@ const Home = () => {
       <section className="transformational-projects-section">
         <div className="projects-content">
           <div className="projects-header">
-            <h2>My Flagship Products</h2>
+            <h2>Product Innovation</h2>
             <p className="projects-subtitle">
-              Strategic design leadership that drives business transformation and creates measurable impact across industries and user segments.
+              Driving state-of-the-art product design that transforms businesses from AI-powered platforms to smart city solutions delivering measurable impact, speed, and scale. Here are a couple I am proud to share:
             </p>
           </div>
           
@@ -94,7 +94,7 @@ const Home = () => {
               <div className="hekla-stat"><span className="stat-value">$2.5M+</span><span className="stat-label">Business Impact</span></div>
               <div className="hekla-stat"><span className="stat-value">100% AI</span><span className="stat-label">No-Code Apps</span></div>
             </div>
-            <a href="#" className="cta-button secondary">View Product</a>
+            <a href="/portfolio/Hekla" className="cta-button secondary">View Product</a>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ const Home = () => {
               <div className="hekla-stat"><span className="stat-value">$330k+</span><span className="stat-label">Annual Client Savings</span></div>
               <div className="hekla-stat"><span className="stat-value">100%</span><span className="stat-label">Accessible Components</span></div>
             </div>
-            <a href="#" className="cta-button secondary">View Product</a>
+            <a href="/portfolio/Beetle" className="cta-button secondary">View Product</a>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-left">
-        <div className="logo-text">Naresh Pentapati</div>
+  <Link to="/" className="logo-text" style={{ textDecoration: 'none' }}>Naresh Pentapati</Link>
       </div>
       <div className="header-right">
         <div className="location">Hyderabad</div>

@@ -1,6 +1,10 @@
+section.case-study:nth-child(odd) {
+  background: var(--color-white);
+}
+
 .case-study {
   padding: 4rem 2rem;
-  max-width: 960px;
+  max-width: 80%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
@@ -45,11 +49,11 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .case-images img {
   width: 100%;
-  max-width: 460px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -58,7 +62,7 @@
 }
 
 .back-link a {
-  color: #00aaff;
+  color: #585858;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -67,11 +71,11 @@
 
 .back-link a:hover {
   text-decoration: underline;
-  color: #0077cc;
+  color: #000000;
 }
 .section-icon {
   font-size: 3.5rem;
-  color: #0077cc;
+  color: #464646;
   margin-right: 0.5rem;
   vertical-align: middle;
   opacity: 0.5;
