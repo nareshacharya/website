@@ -102,6 +102,13 @@ const Hekla = () => {
         <h2><FaGlobe className="section-icon" /> Screenshots</h2>
         <div className="case-images">
           <img src="/images/hekla-cover.png" alt="Hekla IDE Screenshot" />
+           <img src="/images/hekla-1.png" alt="Hekla Screenshot 1" />
+           <img src="/images/hekla-2.png" alt="Hekla Screenshot 2" />
+           <img src="/images/hekla-3.png" alt="Hekla Screenshot 3" />
+           <img src="/images/hekla-4.png" alt="Hekla Screenshot 4" />
+           <img src="/images/hekla-5.png" alt="Hekla Screenshot 5" />    
+           <img src="/images/hekla-6.png" alt="Hekla Screenshot 6" />
+           <img src="/images/hekla-7.png" alt="Hekla Screenshot 7" />                     
         </div>
       </div>
     </section>
