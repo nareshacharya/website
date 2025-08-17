@@ -76,6 +76,9 @@ const Home = () => {
           
           <div className="ai-tools-grid">
             <div className="ai-tool-card">
+              <div className="tool-image">
+                <div className="tool-icon hekla-icon">H</div>
+              </div>
               <div className="tool-header">
                 <h3>Hekla</h3>
                 <div className="tool-badges">
@@ -89,16 +92,37 @@ const Home = () => {
             </div>
             
             <div className="ai-tool-card">
+              <div className="tool-image">
+                <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Beetle Low-Code Platform" />
+              </div>
               <div className="tool-header">
-                <h3>Beetle</h3>
+                <h3>🐞 Beetle</h3>
                 <div className="tool-badges">
-                  <span className="impact-badge medium">Medium Impact</span>
-                  <span className="term-badge medium">Medium Term</span>
+                  <span className="impact-badge high">Strategic Innovation</span>
+                  <span className="term-badge short">Pega Constellation</span>
                 </div>
               </div>
-              <p className="tool-description">
-                Low-code platform enabling 10x faster custom component development for Pega
-              </p>
+              <div className="tool-content">
+                <p className="tool-subtitle">Low-Code Form Builder for Pega Consulting</p>
+                <p className="tool-description">
+                  Proprietary accelerator bridging Figma design to Pega DX API implementation. 
+                  Drag & drop builder with enterprise-ready components and built-in accessibility.
+                </p>
+                <div className="tool-metrics">
+                  <div className="metric-item">
+                    <span className="metric-value">90%</span>
+                    <span className="metric-label">Faster Creation</span>
+                  </div>
+                  <div className="metric-item">
+                    <span className="metric-value">4x</span>
+                    <span className="metric-label">Productivity</span>
+                  </div>
+                  <div className="metric-item">
+                    <span className="metric-value">$330k+</span>
+                    <span className="metric-label">Annual Savings</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

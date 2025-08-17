@@ -133,7 +133,7 @@ const About = () => {
           
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/travel.jpg'} alt="Global Travel" />
+              <img src={process.env.PUBLIC_URL + '/images/about/italy.jpg'} alt="Global Travel" />
             </div>
             <div className="passion-content">
               <h3>Global Travel</h3>
@@ -151,7 +151,7 @@ const About = () => {
           
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/italy.jpg'} alt="Creative Arts" />
+              <img src={process.env.PUBLIC_URL + '/images/about/travel.jpg'} alt="Creative Arts" />
             </div>
             <div className="passion-content">
               <h3>Creative Arts</h3>

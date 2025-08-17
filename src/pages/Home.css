@@ -158,12 +158,89 @@ section {
 }
 
 .ai-tool-card {
-  padding: var(--spacing-lg);
-  border: 1px solid var(--color-border-light);
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-gray);
   border-radius: 20px;
   transition: var(--transition-normal);
   background: transparent;
   text-align: left;
+}
+
+.tool-image {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.tool-image img {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.tool-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-primary),
+    var(--color-accent-secondary)
+  );
+}
+
+.hekla-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.beetle-icon {
+  background: linear-gradient(135deg, #10b981, #06b6d4);
+}
+
+.tool-content {
+  margin-top: var(--spacing-md);
+}
+
+.tool-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-accent-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tool-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-gray);
+}
+
+.tool-metrics .metric-item {
+  text-align: center;
+}
+
+.tool-metrics .metric-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-accent-primary);
+  line-height: 1.2;
+}
+
+.tool-metrics .metric-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
 }
 
 .ai-tool-card:hover {
