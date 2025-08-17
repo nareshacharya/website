@@ -4,10 +4,11 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <div className="contact-wrapper">
       <div className="page-hero">
         <h1>Contact</h1>
       </div>
+    <section className="contact-section">
       <div className="contact-overlay">
         <div className="contact-content">
           <p className="intro">
@@ -18,9 +19,9 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/naresh-pentapati-89ab621b/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/nareshacharya" target="_blank" rel="noopener noreferrer">
+            {/*<a href="https://github.com/nareshacharya" target="_blank" rel="noopener noreferrer">
               <FaGithub />
-            </a>
+            </a>*/}
             <a href="mailto:pentapati.naresh@gmail.com">
               <FaEnvelope />
             </a>
@@ -28,6 +29,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+
+    </div>
   );
 };
 

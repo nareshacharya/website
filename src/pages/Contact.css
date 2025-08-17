@@ -1,6 +1,8 @@
+.contact-wrapper section:nth-child(even) {
+  background: var(--color-light-gray);
+}
 .contact-section {
   min-height: 70vh;
-  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +36,6 @@
   font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 3rem;
-  color: var(--color-text-light);
 }
 
 .contact-icons {
@@ -44,9 +45,9 @@
 }
 
 .contact-icons a {
-  color: var(--color-text-light);
   font-size: 4rem;
   transition: var(--transition-normal);
+  color: var(--color-cta-primary);
 }
 
 .contact-icons a:hover {

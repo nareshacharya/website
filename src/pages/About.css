@@ -1,3 +1,10 @@
+.about-wrapper section:nth-child(even) {
+  background: var(--color-light-gray);
+}
+.about-wrapper section:nth-child(odd) {
+  background: var(--color-white);
+}
+
 .about-wrapper {
   min-height: 100vh;
   padding-bottom: 6rem;

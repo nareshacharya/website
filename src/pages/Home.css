@@ -2,28 +2,48 @@ body,
 * {
   font-family: "Montserrat", sans-serif !important;
 }
+/* Consolidated Hekla flagship section styles */
 .hekla-flagship-row {
   display: flex;
   flex-direction: row;
-  width: 90vw;
-  max-width: 100vw;
+  width: 95vw;
+  max-width: 95vw;
   align-items: stretch;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  background: var(--color-white);
+  background: var(--color-light-gray);
+  border-radius: 24px;
+  box-shadow: 0 2px 12px 0 rgba(30, 41, 59, 0.04);
+  border: 1px solid var(--color-gray);
+  gap: var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
+}
+.hekla-flagship-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: var(--spacing-xl);
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .hekla-flagship-image-wrapper {
   flex: 1 1 55%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: var(--color-white);
+  background: var(--color-cta-primary);
   min-width: 0;
   padding: 0;
   margin: 0;
-  /* Prevent image from being clipped on wide screens */
   overflow-x: visible;
+  width: 100vw;
+  justify-content: center;
 }
 .hekla-flagship-image {
   width: 95%;
@@ -32,22 +52,24 @@ body,
   max-height: 60vh;
   object-fit: contain;
   display: block;
-  margin: 0 0 0 2vw;
+  margin: 0 auto;
   background: var(--color-white);
   box-shadow: none;
   border-radius: 0;
+  max-width: 100vw;
 }
 .hekla-flagship-content {
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 500px;
-  padding: var(--spacing-xl);
-
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
   min-width: 0;
   gap: 1rem;
+  width: 100%;
 }
 .hekla-title {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -94,6 +116,21 @@ body,
   margin-top: 1.5rem;
   font-size: 1.1rem;
   padding: 1rem 2.5rem;
+  background: var(--color-cta-secondary);
+  color: var(--color-cta-text-dark);
+  border: 2px solid var(--color-cta-border);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.hekla-cta:hover {
+  background: var(--color-cta-secondary-hover);
+  color: var(--color-cta-text-dark);
+  border-color: var(--color-cta-border-dark);
+  transform: translateY(-2px);
 }
 @media (max-width: 1100px) {
   .hekla-flagship-row {
@@ -122,7 +159,7 @@ body,
   }
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background: var(--color-light-gray);
 }
 
@@ -192,9 +229,9 @@ section {
 }
 
 .metric-label {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-size: 2rem;
   font-weight: 600;
-  color: var(--color-text-dark);
+  color: var(--color-cta-primary);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -241,47 +278,39 @@ section {
 /* AI Innovation Leadership Section */
 
 /* Hekla Flagship Section */
-.hekla-flagship-section {
-  width: 100vw;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-  background: var(--color-white);
+.hekla-flagship-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  position: relative;
-  overflow: hidden;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
-.hekla-flagship-image-wrapper {
-  width: 100vw;
+.hekla-flagship-header h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--color-text-dark);
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-white);
 }
-.hekla-flagship-image {
-  width: 100vw;
-  max-width: 100vw;
-  height: auto;
-  max-height: 60vh;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  background: var(--color-white);
-  box-shadow: none;
-  border-radius: 0;
+.hekla-flagship-description {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
 }
-.hekla-flagship-content {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--spacing-lg) var(--spacing-xl) 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.hekla-flagship-tagline {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+.hekla-flagship-summary {
+  margin-bottom: 1.5rem;
+}
+.hekla-flagship-section .impact-badge.high {
+  background: var(--color-accent-primary);
+  color: var(--color-white);
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  margin-left: 1rem;
 }
 .hekla-flagship-header {
   display: flex;
@@ -322,7 +351,7 @@ section {
     max-height: 40vh;
   }
   .hekla-flagship-content {
-    padding: var(--spacing-lg) var(--spacing-sm);
+    padding: var(--spacing-sm);
   }
 }
 @media (max-width: 600px) {
@@ -330,7 +359,7 @@ section {
     max-height: 28vh;
   }
   .hekla-flagship-content {
-    padding: var(--spacing-md) var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-xs);
   }
   .hekla-flagship-header h2 {
     font-size: 2rem;
@@ -409,7 +438,7 @@ section {
 
 .tool-metrics .metric-label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 2rem;
   color: var(--color-text-muted);
   margin-top: 0.25rem;
 }
@@ -693,9 +722,9 @@ section {
 }
 
 .metric-label {
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-size: 1.2rem;
   color: var(--color-text-secondary);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .case-study-btn {

@@ -5,8 +5,10 @@ const About = () => {
   return (
     <div className="about-wrapper">
       {/* Hero Section */}
-      <section className="about-hero">
+      <div className="page-hero">
         <h1>About Me</h1>
+      </div>
+      <section className="about-hero">
         <h2>Beyond the Executive</h2>
         <p className="hero-description">
           While I lead design organizations and drive digital transformation by day, my true inspiration comes from the intersection of technology, creativity, and human experience. I believe the best leaders are lifelong learners who draw insights from diverse experiences.
@@ -14,11 +16,11 @@ const About = () => {
         
         <div className="hero-stats">
           <div className="stat-item">
-            <div className="stat-number">15+</div>
+            <div className="stat-number">18+</div>
             <div className="stat-label">Years in Design</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">25+</div>
+            <div className="stat-number">15+</div>
             <div className="stat-label">Countries Visited</div>
           </div>
           <div className="stat-item">
@@ -26,8 +28,8 @@ const About = () => {
             <div className="stat-label">Photos Captured</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">10K+</div>
-            <div className="stat-label">Miles Cycled</div>
+            <div className="stat-number">6K+</div>
+            <div className="stat-label">Kilometres Cycled</div>
           </div>
         </div>
         
@@ -46,10 +48,10 @@ const About = () => {
         
         <div className="timeline">
           <div className="timeline-item">
-            <div className="timeline-year">2008</div>
+            <div className="timeline-year">2007</div>
             <div className="timeline-content">
-              <h3>Design Beginnings</h3>
-              <p>Started as a visual designer, fell in love with the intersection of art and technology.</p>
+              <h3>Corporate Beginnings</h3>
+              <p>Started as a frontend guy, fell in love with the intersection of art and technology.</p>
             </div>
           </div>
           
@@ -65,12 +67,12 @@ const About = () => {
             <div className="timeline-year">2016</div>
             <div className="timeline-content">
               <h3>Leadership Evolution</h3>
-              <p>Transitioned to leading design teams and discovered my passion for organizational impact.</p>
+              <p>Transitioned to leading product teams and discovered my passion for organizational impact.</p>
             </div>
           </div>
           
           <div className="timeline-item">
-            <div className="timeline-year">2020</div>
+            <div className="timeline-year">2021</div>
             <div className="timeline-content">
               <h3>AI Innovation</h3>
               <p>Pioneered AI-enhanced design processes and built industry-leading design tools.</p>
@@ -78,12 +80,26 @@ const About = () => {
           </div>
           
           <div className="timeline-item">
-            <div className="timeline-year">2024</div>
+            <div className="timeline-year">2022</div>
             <div className="timeline-content">
-              <h3>Director & Thought Leader</h3>
+              <h3>Head of Design & Thought Leader</h3>
               <p>Leading 30+ member teams while sharing insights through speaking and writing.</p>
             </div>
           </div>
+          <div className="timeline-item">
+            <div className="timeline-year">2024</div>
+            <div className="timeline-content">
+              <h3>Low-code App Builder</h3>
+              <p>Built a low-code app builder to revolutionalize the way frontend developers create Pega applications.</p>
+            </div>
+          </div> 
+          <div className="timeline-item">
+            <div className="timeline-year">2025</div>
+            <div className="timeline-content">
+              <h3>AI App Builder</h3>
+              <p>A game changing innovation in Pega consulting with an AI-powered app builder to disrupt the frontend capabilities.</p>
+            </div>
+          </div>                    
         </div>
       </section>
 
@@ -105,9 +121,8 @@ const About = () => {
               <div className="achievements">
                 <h4>Achievements:</h4>
                 <ul>
-                  <li>Published in National Geographic</li>
-                  <li>5 Wildlife Photography Awards</li>
-                  <li>15 Countries Documented</li>
+                  <li>1 Wildlife Photography Awards</li>
+                  <li>5 Countries Documented</li>
                 </ul>
               </div>
             </div>
@@ -123,9 +138,9 @@ const About = () => {
               <div className="achievements">
                 <h4>Achievements:</h4>
                 <ul>
-                  <li>10,000+ Miles Annually</li>
-                  <li>Cross-Country Tour Completed</li>
-                  <li>Mountain Challenge Finisher</li>
+                  <li>2,000+ Kilometres Annually</li>
+                  <li>Brevet Completed</li>
+                  <li>Heaven and Hell Finisher</li>
                 </ul>
               </div>
             </div>
@@ -141,7 +156,7 @@ const About = () => {
               <div className="achievements">
                 <h4>Achievements:</h4>
                 <ul>
-                  <li>25+ Countries Visited</li>
+                  <li>15+ Countries Visited</li>
                   <li>Cultural Design Studies</li>
                   <li>International Speaking Tours</li>
                 </ul>
@@ -155,12 +170,11 @@ const About = () => {
             </div>
             <div className="passion-content">
               <h3>Creative Arts</h3>
-              <p>Exploring various creative mediums including painting, sculpture, and digital art. Creativity outside of work fuels innovation in professional design challenges.</p>
+              <p>Exploring various creative mediums including drums, painting, sculpture, and digital art. Creativity outside of work fuels innovation in professional design challenges.</p>
               <div className="achievements">
                 <h4>Achievements:</h4>
                 <ul>
-                  <li>Gallery Exhibitions</li>
-                  <li>Digital Art Collections</li>
+                  <li>2 Stage Performances</li>
                   <li>Mixed Media Experiments</li>
                 </ul>
               </div>
@@ -175,45 +189,6 @@ const About = () => {
           "Creativity is intelligence having fun. The best design solutions come from leaders who embrace diverse experiences and maintain childlike curiosity about the world."
         </blockquote>
         <cite>— My Personal Design Philosophy</cite>
-      </section>
-
-      {/* Core Values Section */}
-      <section className="values-section">
-        <h2>Core Values</h2>
-        <p className="section-subtitle">
-          The fundamental principles that guide my leadership style, decision-making, and approach to building meaningful relationships and impactful solutions.
-        </p>
-        
-        <div className="values-grid">
-          <div className="value-card">
-            <h3>Authentic Leadership</h3>
-            <p>Leading with vulnerability, transparency, and genuine care for team growth and wellbeing.</p>
-          </div>
-          
-          <div className="value-card">
-            <h3>Lifelong Learning</h3>
-            <p>Embracing curiosity, seeking diverse perspectives, and growing through every challenge.</p>
-          </div>
-          
-          <div className="value-card">
-            <h3>Collaborative Impact</h3>
-            <p>Believing that the best outcomes emerge from diverse teams working toward shared visions.</p>
-          </div>
-          
-          <div className="value-card">
-            <h3>Sustainable Innovation</h3>
-            <p>Creating solutions that balance human needs, business goals, and environmental responsibility.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Connect Section */}
-      <section className="connect-section">
-        <h2>Let's Connect & Collaborate</h2>
-        <p>
-          Whether you're interested in design leadership, sharing travel stories, discussing photography, or exploring collaboration opportunities—I'd love to connect.
-        </p>
-        <a href="#" className="connect-btn">Connect on LinkedIn</a>
       </section>
     </div>
   );

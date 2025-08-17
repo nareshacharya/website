@@ -84,7 +84,7 @@ const Home = () => {
             <img src={process.env.PUBLIC_URL + '/images/hekla.png'} alt="Hekla AI App Builder" className="hekla-flagship-image" />
           </div>
           <div className="hekla-flagship-content">
-            <h2 className="hekla-title">Hekla <br />AI App Builder</h2>
+            <h2 className="hekla-title">Hekla - AI App Builder</h2>
             <div className="hekla-subtitle">First-of-its-kind AI-powered platform that transforms natural language into enterprise-grade Pega apps.</div>
             <div className="hekla-description">
               I spearheaded the vision, design, and full development of Hekla — a flagship innovation redefining Pega consulting. With unmatched speed, efficiency, and ROI, it delivers apps in hours instead of weeks, setting a new benchmark in the industry.
@@ -94,7 +94,7 @@ const Home = () => {
               <div className="hekla-stat"><span className="stat-value">$2.5M+</span><span className="stat-label">Business Impact</span></div>
               <div className="hekla-stat"><span className="stat-value">100% AI</span><span className="stat-label">No-Code Apps</span></div>
             </div>
-            <a href="#" className="cta-button primary hekla-cta">View Product</a>
+            <a href="#" className="cta-button secondary">View Product</a>
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@ const Home = () => {
             <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Hekla AI App Builder" className="hekla-flagship-image" />
           </div>
           <div className="hekla-flagship-content">
-            <h2 className="hekla-title">Beetle  <br />Low-Code Accelerator</h2>
+            <h2 className="hekla-title">Beetle - Low-Code Accelerator</h2>
             <div className="hekla-subtitle">Proprietary low-code platform bridging Figma design and Pega DX API for rapid, accessible enterprise app delivery.</div>
             <div className="hekla-description">
               Conceived and built Beetle to give our team a competitive edge in Pega consulting. Enables 4x faster delivery, seamless Figma-to-code workflow, and enterprise-ready, accessible components.
@@ -116,14 +116,14 @@ const Home = () => {
               <div className="hekla-stat"><span className="stat-value">$330k+</span><span className="stat-label">Annual Client Savings</span></div>
               <div className="hekla-stat"><span className="stat-value">100%</span><span className="stat-label">Accessible Components</span></div>
             </div>
-            <a href="#" className="cta-button primary hekla-cta">View Product</a>
+            <a href="#" className="cta-button secondary">View Product</a>
           </div>
         </div>
       </div>
 
 
           <div className="portfolio-cta">
-            <a href="/portfolio" className="portfolio-btn">Explore Complete Portfolio</a>
+            <a href="/portfolio" className="portfolio-btn">Explore My Work</a>
           </div>
         </div>
       </section>

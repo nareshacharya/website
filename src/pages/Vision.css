@@ -1,14 +1,13 @@
 .vision-wrapper {
   min-height: 100vh;
   padding: 2rem 1rem;
-  padding-bottom: 6rem;
   width: 100%;
 }
 
 /* Page Hero Section */
 .page-hero {
-  text-align: center;
-  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: left;
+  padding: 0 0 0 2rem;
   width: 100%;
 }
 
@@ -24,18 +23,14 @@
 }
 
 .vision-section {
-  margin-bottom: 4rem;
   width: 100%;
+  padding: 6rem 0;
 }
 
 .vision-section > * {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.vision-section {
-  margin-bottom: 4rem;
 }
 
 .vision-section h2 {
@@ -48,21 +43,24 @@
 
 .philosophy-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding-top: 2rem;
 }
 
 .philosophy-item {
-  padding: 2rem;
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  transition: all 0.3s ease;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  transition: none;
 }
 
 .philosophy-item:hover {
-  border-color: var(--accent-primary);
-  transform: translateY(-2px);
+  border-color: none;
+  box-shadow: none;
+  transform: none;
 }
 
 .philosophy-item h3 {
@@ -179,9 +177,8 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
   .philosophy-item {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
 
   .vision-pillars {
