@@ -20,7 +20,7 @@ const Vision = () => {
             </div>
             <div className="philosophy-item">
               <FaProjectDiagram size={36} style={{marginBottom: '1rem', color: 'var(--accent-primary)'}} />
-              <h3>Systems Thinking</h3>
+              <h3>Systems Thinking<br /><br /></h3>
               <p>Design solutions that consider the entire ecosystem, from individual interactions to organizational impact.</p>
             </div>
             <div className="philosophy-item">

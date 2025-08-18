@@ -65,6 +65,10 @@
   margin-bottom: 28px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .competency-heading {

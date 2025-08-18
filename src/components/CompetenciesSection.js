@@ -13,7 +13,7 @@ const coreCompetencies = [
   },
   {
     title: 'Enterprise UX Strategy',
-    description: 'Leading end-to-end UX for platforms (Pega Constellation, React) with focus on design systems, accessibility, and scalability across industries (insurance, retail, infra, public sector)',
+    description: 'Leading end-to-end UX for platforms (Pega Constellation, React) with focus on design systems, accessibility, and scalability across industries',
   },
   {
     title: 'DesignOps & Systems Thinking',
