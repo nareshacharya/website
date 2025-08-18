@@ -5,28 +5,32 @@ import './CompetenciesSection.css';
 const coreCompetencies = [
   {
     title: 'Design Leadership & Strategy',
-    description: 'Driving vision, design culture, and UX transformation across enterprise and B2B/B2C domains',
+    description: 'Defining UX strategy that balances user needs, business goals, and technology feasibility. Setting direction for enterprise-scale design transformations',
   },
   {
-    title: 'Product Innovation',
-    description: 'Spearheading AI-first solutions (e.g., Hekla, Beetle) that reduce time-to-market and create competitive advantage',
+    title: 'Experience-Centered Innovation',
+    description: 'Creating state-of-the-art products (Hekla, Beetle, Smart City solutions) that merge UX principles with cutting-edge tech like AI and low-code',
   },
   {
-    title: 'User Experience Excellence',
-    description: 'Heuristic analysis, design thinking, and systematized UX assessments (insurance, retail, public safety, infra)',
+    title: 'Enterprise UX Strategy',
+    description: 'Leading end-to-end UX for platforms (Pega Constellation, React) with focus on design systems, accessibility, and scalability across industries (insurance, retail, infra, public sector)',
   },
   {
-    title: 'Cross-Functional Collaboration',
-    description: 'Partnering with business, engineering, and stakeholders to align design with organizational goals',
+    title: 'DesignOps & Systems Thinking',
+    description: 'Building design systems and operational frameworks to ensure consistency, speed, and governance in large distributed teams',
   },
   {
-    title: 'Business Impact',
-    description: 'Scaling design systems, securing multi-million $ RFP wins, and delivering measurable ROI',
+    title: 'Research-Driven Insights',
+    description: 'Driving user research, heuristic analysis, and usability testing to shape high-impact decisions in enterprise workflows',
   },
   {
-    title: 'Mentorship & Team Growth',
-    description: 'Leading and upskilling 30+ global UI/UX practitioners, fostering ownership, and embedding innovation',
+    title: 'Mentorship & Design Culture',
+    description: 'Growing, coaching, and inspiring 30+ global UI/UX practitioners, instilling ownership, design maturity, and innovation mindset',
   },
+  {
+    title: 'Business Impact through UX',
+    description: 'Demonstrating ROI by securing multi-million $ wins, improving adoption, and positioning design as a competitive differentiator',
+  },  
 ];
 
 const technicalCompetencies = [
@@ -36,7 +40,7 @@ const technicalCompetencies = [
   },
   {
     title: 'Enterprise Platforms',
-    description: 'Pega Constellation (UI Kit → React SDK migration), DX API integration, low-code app building',
+    description: 'Pega Constellation (UI Kit to React SDK migration), DX API integration, low-code app building',
   },
   {
     title: 'Design Systems & Tools',
@@ -44,7 +48,7 @@ const technicalCompetencies = [
   },
   {
     title: 'AI-Driven Development',
-    description: 'AI-assisted frontend code generation (Cursor AI, Github Co-Pilot, Claude Code), agentic AI workflows',
+    description: 'AI-assisted frontend code generation (Cursor AI, Github Co-Pilot, Claude Code), agentic AI workflows, prompt engineering for UI/UX',
   },
   {
     title: 'Collaboration & Delivery',
@@ -54,6 +58,10 @@ const technicalCompetencies = [
     title: 'Cloud & Integrations',
     description: 'REST APIs, GraphQL, third-party integrations, responsive and accessible design practices',
   },
+  {
+    title: 'Data-Driven UX & Analytics',
+    description: 'Leveraging product analytics, A/B testing, and usage insights to continuously optimize user experience and business outcomes',
+  },  
 ];
 
 const listItemVariants = {
