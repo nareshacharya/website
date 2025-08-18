@@ -26,7 +26,7 @@ const allProjects = [
     category: 'public',
     tech: ['GIS', 'Real-time Data', 'Event Ops', 'Web App'],
     description: 'Built a tool to monitor crowd density, movement, and behavior in real time. Enabled proactive alerts and helped prevent crowding risks at events.',
-    image: process.env.PUBLIC_URL + '/images/crowd.jpg'
+    image: process.env.PUBLIC_URL + '/images/crowd-2.png'
   },
   {
     id: 'disaster-management',
@@ -34,7 +34,7 @@ const allProjects = [
     category: 'public',
     tech: ['Emergency Planning', 'Map UI', 'Resource Mapping', 'Offline UX'],
     description: 'Mapped emergency resources and response plans through a central planning tool. Enabled fast decision-making during floods, fires, and public safety threats.',
-    image: process.env.PUBLIC_URL + '/images/disaster.jpg'
+    image: process.env.PUBLIC_URL + '/images/disaster-8.png'
   },
   {
     id: 'patrol-management',
@@ -42,7 +42,7 @@ const allProjects = [
     category: 'public',
     tech: ['Mobile-first', 'Beat Planning', 'GPS Tracking', 'Offline Access'],
     description: 'Streamlined beat scheduling and officer tracking with a smart patrol planner. Improved on-ground efficiency and visibility for supervisors.',
-    image: process.env.PUBLIC_URL + '/images/patrol.jpg'
+    image: process.env.PUBLIC_URL + '/images/patrol-6.png'
   },
 
 

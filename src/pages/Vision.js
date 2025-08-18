@@ -70,22 +70,22 @@ const Vision = () => {
           <div className="values-grid" style={{marginTop: '2.5rem', marginBottom: '2.5rem'}}>
             <div className="value-item">
               <FaRegHeart size={32} style={{marginBottom: '0.5rem', color: 'var(--text-primary)'}} />
-              <h4>Empathy</h4>
+              <h3>Empathy</h3>
               <p>Understanding user needs through deep research and genuine connection.</p>
             </div>
             <div className="value-item">
               <FaStar size={32} style={{marginBottom: '0.5rem', color: 'var(--text-primary)'}} />
-              <h4>Excellence</h4>
+              <h3>Excellence</h3>
               <p>Pursuing the highest standards in every design decision and deliverable.</p>
             </div>
             <div className="value-item">
               <FaLightbulb size={32} style={{marginBottom: '0.5rem', color: 'var(--text-primary)'}} />
-              <h4>Innovation</h4>
+              <h3>Innovation</h3>
               <p>Pushing boundaries while maintaining focus on practical, user-centered solutions.</p>
             </div>
             <div className="value-item">
               <FaHandshake size={32} style={{marginBottom: '0.5rem', color: 'var(--text-primary)'}} />
-              <h4>Collaboration</h4>
+              <h3>Collaboration</h3>
               <p>Building strong partnerships across disciplines to achieve shared goals.</p>
             </div>
           </div>

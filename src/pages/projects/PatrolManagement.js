@@ -24,6 +24,11 @@ const PatrolManagement = () => {
           A city-wide patrol planning and tracking solution enabling beat optimization, real-time field visibility, and operational accountability.
         </p>
       </div>
+       <img 
+          src={process.env.PUBLIC_URL + '/images/patrol-6.png'} 
+          alt="Beetle Landing"
+          style={{ width: '100%', height: 'auto', borderRadius: '18px', marginBottom: '2rem', objectFit: 'cover' }}
+        />
 
       <div className="case-section">
         <h2><FaMapMarkedAlt className="section-icon" /> The Challenge</h2>
@@ -90,8 +95,10 @@ const PatrolManagement = () => {
       <div className="case-section">
         <h2><FaDesktop className="section-icon" />  Screenshots</h2>
         <div className="case-images">
-          <img src="/images/patrol-map.jpg" alt="Patrol Planning Map" />
-          <img src="/images/patrol-mobile.jpg" alt="Mobile Field Officer App" />
+           <img src="/images/patrol-4.png" alt="Disaster Management Screenshot 3" />
+           <img src="/images/patrol-5.png" alt="Disaster Management Screenshot 4" />
+           <img src="/images/patrol-6.png" alt="Disaster Management Screenshot 5" />
+           <img src="/images/patrol-7.png" alt="Disaster Management Screenshot 6" />
         </div>
       </div>
     </section>

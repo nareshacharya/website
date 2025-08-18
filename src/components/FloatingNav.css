@@ -85,6 +85,11 @@
   color: var(--color-cta-primary, #000);
 }
 
+/* Ensure active nav label stays white on hover */
+.nav-item.active:hover .nav-label {
+  color: var(--color-cta-text-light, #fff) !important;
+}
+
 .nav-item:not(.active):hover {
   background: var(--color-cta-secondary-hover, #f8f9fa);
   padding: 0.2rem 0.4rem;
