@@ -30,9 +30,10 @@
   text-align: center;
 }
 .vision-wrapper {
-  min-height: 100vh;
-  padding: 2rem 1rem;
   width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 /* Page Hero Section */
@@ -40,6 +41,11 @@
   text-align: left;
   padding: 0 0 0 2rem;
   width: 100%;
+  scroll-snap-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .page-hero h1 {
@@ -55,13 +61,41 @@
 
 .vision-section {
   width: 100%;
-  padding: 6rem 0;
+  padding: 2rem 0;
+  scroll-snap-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .vision-section > * {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.approach-section {
+  padding: 2rem 0;
+}
+
+.approach-section > * {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.approach-stage {
+  text-align: center;
+}
+
+.approach-stage h3 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.approach-stage ul {
+  margin-top: 0.5rem;
 }
 
 .vision-section h2 {
@@ -230,6 +264,15 @@
 
   .value-item {
     padding: 1.25rem;
+  }
+
+  .approach-section > div {
+    padding: 0 1rem !important;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 }
 
