@@ -6,9 +6,19 @@
 }
 
 .about-wrapper {
-  min-height: 100vh;
-  padding-bottom: 6rem;
   width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.about-wrapper > section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 /* Hero Section */
