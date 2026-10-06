@@ -11,11 +11,13 @@ test('introduces the current role and links to work', () => {
   expect(screen.getByRole('link', { name: /explore my work/i })).toHaveAttribute('href', '/portfolio');
 });
 
-test('shows the three approved guides and excludes older unreviewed articles', () => {
+test('lists all fifteen approved articles and excludes older unreviewed copy', () => {
   render(<MemoryRouter><Blogs /></MemoryRouter>);
+  expect(screen.getAllByRole('article')).toHaveLength(15);
   expect(screen.getByRole('heading', { name: /GPT-6.1 Sol for UX teams/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /Claude Opus 5.5 for UX teams/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /Gemini 3.8 Flash for UX teams/i })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /Finance UX that explains affordability/i })).toBeInTheDocument();
   expect(screen.queryByText(/UX Maturity in an Organization/i)).not.toBeInTheDocument();
 });
 

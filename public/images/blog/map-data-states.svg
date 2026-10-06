@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">Four map data states with different meanings</title>
+<desc id="desc">Illustrative legend distinguishes a recorded value, a query with no matching records, an area without coverage, and a layer that failed to load. Every state has a text label and a non-color cue.</desc>
+<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#fff5df"/><path d="M0 0V12" stroke="#b08a3b" stroke-width="3"/></pattern></defs>
+<rect width="1200" height="600" fill="#f8faf9"/>
+<g font-family="Arial, sans-serif" fill="#12332a">
+<text x="60" y="61" font-size="17" font-weight="700" letter-spacing="2">MAP UX · ILLUSTRATIVE LEGEND</text>
+<text x="60" y="115" font-size="37" font-weight="700">An empty map can mean different things</text>
+<text x="60" y="153" font-size="20" fill="#4b6058">Explain the state, then give the person a useful next step.</text>
+<g transform="translate(60 203)"><rect width="518" height="132" rx="16" fill="white" stroke="#b4cec0"/><circle cx="54" cy="52" r="19" fill="#126348"/><circle cx="54" cy="52" r="6" fill="white"/><text x="96" y="48" font-size="23" font-weight="700">Recorded value</text><text x="96" y="80" font-size="18">Show the fact, source, and date.</text></g>
+<g transform="translate(620 203)"><rect width="518" height="132" rx="16" fill="white" stroke="#b4cec0"/><circle cx="54" cy="52" r="19" fill="none" stroke="#536a60" stroke-width="3"/><text x="96" y="48" font-size="23" font-weight="700">No matching records</text><text x="96" y="80" font-size="18">Explain the query and offer filter changes.</text></g>
+<g transform="translate(60 365)"><rect width="518" height="132" rx="16" fill="white" stroke="#b4cec0"/><rect x="34" y="32" width="40" height="40" rx="5" fill="url(#hatch)" stroke="#b08a3b"/><text x="96" y="48" font-size="23" font-weight="700">Coverage unavailable</text><text x="96" y="80" font-size="18">Say this source has no data for the area.</text></g>
+<g transform="translate(620 365)"><rect width="518" height="132" rx="16" fill="white" stroke="#b4cec0"/><path d="M36 34L72 70M72 34L36 70" stroke="#9e4b34" stroke-width="5"/><text x="96" y="48" font-size="23" font-weight="700">Layer failed to load</text><text x="96" y="80" font-size="18">Explain the problem and offer a retry.</text></g>
+<text x="60" y="551" font-size="18" fill="#4b6058">Original schematic. These are example interface states, not real geographic or property data.</text>
+</g></svg>

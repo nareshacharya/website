@@ -16,7 +16,7 @@ const Home = () => {
           <div className="leadership-header">
             <h2>Leadership Impact at Scale</h2>
             <p className="leadership-subtitle">
-              Connecting product strategy, research, experience design and frontend implementation across enterprise platforms and digital products.
+              Leading creative delivery across EMEA while connecting product strategy, research, experience design and frontend implementation.
             </p>
           </div>
           

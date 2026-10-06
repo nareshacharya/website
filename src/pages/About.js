@@ -11,7 +11,10 @@ const About = () => {
       <section className="about-hero">
         <h2>Product thinking, design and implementation</h2>
         <p className="hero-description">
-          I’m Head of Creative and Associate Vice President at Photon. My work spans understanding domains and users, defining product requirements, mapping journeys, designing interfaces and building working software. I lead teams and advise clients while staying hands-on. At Photon, I also explore AI tools for creative and UX work, workflow agents and proofs of concept.
+          I’m Head of Creative and Associate Vice President at Photon Interactive, leading the EMEA creative team and its delivery. My work spans understanding domains and users, defining product requirements, mapping journeys, designing interfaces and building working software. I lead teams and advise clients while staying hands-on.
+        </p>
+        <p className="hero-description">
+          At Photon, I lead work on AI-first and agentic application experiences for global corporations, including simplifying traditional application flows so tasks are easier to complete. I mentor and train UX practitioners in AI and UX, and run practical sessions on current models, their capabilities, performance and pricing so the team can make informed choices.
         </p>
         <p className="hero-description">
           Earlier work includes accounts and wallets at Entain, public safety with L&amp;T, citizen services with EY, Pega and React at Areteans, and consulting at Deloitte. I have also taken EMIdaddy and realIQ from product definition through implementation.
@@ -112,8 +115,8 @@ const About = () => {
           <div className="timeline-item">
             <div className="timeline-year">2026</div>
             <div className="timeline-content">
-              <h3>Head of Creative & Associate Vice President, Photon</h3>
-              <p>Since May 2026, leading creative and UX work while exploring AI-assisted workflows, agents and product proofs of concept.</p>
+              <h3>Head of Creative & Associate Vice President, Photon Interactive</h3>
+              <p>Since May 2026, leading the EMEA creative team and delivery, AI-first and agentic application experiences, and practical AI and UX learning for the team.</p>
             </div>
           </div>
           <div className="timeline-item">

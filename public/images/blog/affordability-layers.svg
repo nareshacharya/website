@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550" role="img" aria-labelledby="title desc">
+<title id="title">Show what an affordability estimate includes</title>
+<desc id="desc">Illustrative finance UX diagram separating an estimated monthly loan payment from other entered costs and costs that are still unknown. It makes no approval or affordability conclusion.</desc>
+<rect width="1200" height="550" fill="#f8faf9"/>
+<g font-family="Arial, sans-serif" fill="#12332a">
+<text x="60" y="65" font-size="17" font-weight="700" letter-spacing="2">FINANCE UX · ILLUSTRATIVE ONLY</text>
+<text x="60" y="120" font-size="37" font-weight="700">Make the limits visible beside the estimate</text>
+<text x="60" y="157" font-size="20" fill="#4b6058">A correct calculation still needs a clear explanation.</text>
+<rect x="60" y="210" width="338" height="224" rx="18" fill="#e2f1e9" stroke="#b4cec0"/>
+<text x="85" y="252" font-size="16" font-weight="700">01  LOAN PAYMENT</text>
+<text x="85" y="313" font-size="36" font-weight="700">₹25,000 / month</text>
+<text x="85" y="359" font-size="20">Based on amount, rate,</text>
+<text x="85" y="390" font-size="20">and term entered</text>
+<rect x="430" y="210" width="338" height="224" rx="18" fill="#fff" stroke="#b4cec0"/>
+<text x="455" y="252" font-size="16" font-weight="700">02  OTHER COSTS</text>
+<text x="455" y="313" font-size="30" font-weight="700">What was entered</text>
+<text x="455" y="359" font-size="20">Keep each cost visible</text>
+<text x="455" y="390" font-size="20">and easy to change</text>
+<rect x="800" y="210" width="338" height="224" rx="18" fill="#fff5df" stroke="#c9a95e" stroke-dasharray="7 5"/>
+<text x="825" y="252" font-size="16" font-weight="700">03  STILL UNKNOWN</text>
+<text x="825" y="313" font-size="30" font-weight="700">Not included yet</text>
+<text x="825" y="359" font-size="20">A missing value must</text>
+<text x="825" y="390" font-size="20">not silently become zero</text>
+<text x="60" y="491" font-size="18" fill="#4b6058">Original example. This diagram does not establish affordability, approval, or a safe borrowing limit.</text>
+</g></svg>

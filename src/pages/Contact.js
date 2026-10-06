@@ -12,8 +12,8 @@ const Contact = () => {
       <div className="contact-overlay">
         <div className="contact-content">
           <p className="intro">
-            I'm passionate about crafting meaningful experiences that bring clarity, delight, and value.<br/><br/>
-            Let's connect and create something impactful!
+            I work across product discovery, UX design, frontend implementation and creative leadership.<br/><br/>
+            For consulting, product collaborations or speaking inquiries, get in touch by email or LinkedIn.
           </p>
           <div className="contact-icons">
             <a href="https://www.linkedin.com/in/naresh-pentapati-89ab621b/" target="_blank" rel="noopener noreferrer">

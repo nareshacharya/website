@@ -50,18 +50,20 @@ fs.writeFileSync(path.join(generatedDir, 'blogs.json'), JSON.stringify(articles,
 fs.rmSync(outputDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
 
-const page = ({ title, description, canonical, body, type = 'website' }) => `<!doctype html>
+const page = ({ title, description, canonical, body, type = 'website', image = `${site}/images/og-image.png`, imageAlt = 'Naresh Pentapati portfolio', article = null }) => `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 <link rel="canonical" href="${escapeHtml(canonical)}"><meta property="og:type" content="${type}">
 <meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}">
-<meta property="og:url" content="${escapeHtml(canonical)}"><meta property="og:image" content="${site}/images/og-image.png">
-<meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="Articles by Naresh Pentapati" href="${site}/rss.xml">
+<meta property="og:url" content="${escapeHtml(canonical)}"><meta property="og:image" content="${escapeHtml(image)}"><meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
+${article ? `<meta property="article:published_time" content="${article.date}"><meta property="article:author" content="${escapeHtml(article.author)}">` : ''}
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(title)}"><meta name="twitter:description" content="${escapeHtml(description)}"><meta name="twitter:image" content="${escapeHtml(image)}"><link rel="alternate" type="application/rss+xml" title="Articles by Naresh Pentapati" href="${site}/rss.xml">
+${article ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'BlogPosting', headline: article.title, description: article.summary, datePublished: article.date, author: { '@type': 'Person', name: article.author, url: `${site}/about`, sameAs: ['https://www.linkedin.com/in/naresh-pentapati-89ab621b/'] }, mainEntityOfPage: canonical, image, keywords: article.topics }).replace(/</g, '\\u003c')}</script>` : ''}
 <style>body{margin:0;background:#faf9f6;color:#242424;font:16px/1.7 Montserrat,Arial,sans-serif}header,footer{padding:1.25rem max(1.5rem,calc((100vw - 1100px)/2))}header{border-bottom:1px solid #ddd}footer{border-top:1px solid #ddd;margin-top:4rem}a{color:#775e28}header a{text-decoration:none;color:inherit;font-weight:700}nav{float:right}nav a{margin-left:1rem}main{max-width:850px;margin:5rem auto;padding:0 1.5rem;min-height:55vh}main a{overflow-wrap:anywhere}h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.15}h2{margin-top:2.5rem}article{border-top:1px solid #ddd;padding:1.5rem 0}.meta{color:#666;font-size:.9rem}.topics{color:#775e28}.body img{max-width:100%;height:auto}.body pre{overflow:auto;padding:1rem;background:#eee}@media(max-width:580px){main{margin:3rem auto}nav{float:none;display:block;margin-top:.5rem}nav a{margin:0 1rem 0 0}}</style>
-</head><body><header><a href="/">Naresh Pentapati</a><nav><a href="/portfolio">Work</a><a href="/about">About</a><a href="/blogs">Articles</a><a href="/contact">Contact</a></nav></header><main>${body}</main><footer><a href="/">Naresh Pentapati</a> · <a href="/sitemap.xml">Sitemap</a></footer></body></html>`;
+</head><body><header><a href="/">Naresh Pentapati</a><nav><a href="/portfolio">Work</a><a href="/about">About</a><a href="/blogs">Articles</a><a href="/contact">Contact</a></nav></header><main>${body}</main><footer><a href="/">Naresh Pentapati</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/rss.xml">RSS</a></footer></body></html>`;
 
 const listing = articles.length
-  ? articles.map(article => `<article><h2><a href="/blogs/${article.slug}/">${escapeHtml(article.title)}</a></h2><p class="meta">${escapeHtml(article.date)} · ${escapeHtml(article.author)}</p><p>${escapeHtml(article.summary)}</p><p class="topics">${article.topics.map(escapeHtml).join(' · ')}</p></article>`).join('')
+  ? articles.map(article => `<article><h2><a href="/blogs/${article.slug}/">${escapeHtml(article.title)}</a></h2><p class="meta">${escapeHtml(article.date)} · <a href="/about">${escapeHtml(article.author)}</a></p><p>${escapeHtml(article.summary)}</p><p class="topics">${article.topics.map(escapeHtml).join(' · ')}</p></article>`).join('')
   : '<p>New writing is on its way. In the meantime, explore my work or get in touch.</p><p><a href="/portfolio">Explore my work</a> · <a href="/contact">Contact me</a></p>';
 fs.writeFileSync(path.join(outputDir, 'index.html'), page({ title: 'Articles & Writing | Naresh Pentapati', description: 'Articles on product thinking, UX design and frontend implementation by Naresh Pentapati.', canonical: `${site}/blogs`, body: `<h1>Articles & Writing</h1>${listing}` }));
 
@@ -69,8 +71,11 @@ for (const article of articles) {
   const articleDir = path.join(outputDir, article.slug);
   fs.mkdirSync(articleDir, { recursive: true });
   const body = renderToStaticMarkup(React.createElement(ReactMarkdown, { components: markdownComponents }, article.body));
+  const imageMatch = article.body.match(/!\[([^\]]*)\]\((\/images\/blog\/[^)]+)\)/);
+  const image = imageMatch ? `${site}${imageMatch[2]}` : `${site}/images/og-image.png`;
+  const imageAlt = imageMatch ? imageMatch[1] : 'Naresh Pentapati portfolio';
   const sources = article.sources.length ? `<section><h2>Sources</h2><ul>${article.sources.map(source => `<li><a href="${escapeHtml(source)}" rel="noopener noreferrer">${escapeHtml(source)}</a></li>`).join('')}</ul></section>` : '';
-  fs.writeFileSync(path.join(articleDir, 'index.html'), page({ title: `${article.title} | Naresh Pentapati`, description: article.summary, canonical: `${site}/blogs/${article.slug}`, type: 'article', body: `<article><a href="/blogs">← All articles</a><h1>${escapeHtml(article.title)}</h1><p class="meta">Published ${escapeHtml(article.date)} · ${escapeHtml(article.author)}</p><p class="topics">${article.topics.map(escapeHtml).join(' · ')}</p>${article.modelLaunchDate ? `<p class="meta">Model launched ${escapeHtml(article.modelLaunchDate)}</p>` : ''}${article.coverageDate ? `<p class="meta">Information checked ${escapeHtml(article.coverageDate)}</p>` : ''}<div class="body">${body}</div>${sources}</article>` }));
+  fs.writeFileSync(path.join(articleDir, 'index.html'), page({ title: `${article.title} | Naresh Pentapati`, description: article.summary, canonical: `${site}/blogs/${article.slug}`, type: 'article', image, imageAlt, article, body: `<article><a href="/blogs">← All articles</a><h1>${escapeHtml(article.title)}</h1><p class="meta">Published ${escapeHtml(article.date)} · <a href="/about">${escapeHtml(article.author)}</a></p><p class="topics">${article.topics.map(escapeHtml).join(' · ')}</p>${article.modelLaunchDate ? `<p class="meta">Model launched ${escapeHtml(article.modelLaunchDate)}</p>` : ''}${article.coverageDate ? `<p class="meta">Information checked ${escapeHtml(article.coverageDate)}</p>` : ''}<div class="body">${body}</div>${sources}</article>` }));
 }
 
 const paths = ['/', '/portfolio', '/about', '/vision', '/contact', '/blogs',

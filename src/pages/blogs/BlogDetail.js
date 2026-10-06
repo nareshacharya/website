@@ -12,7 +12,7 @@ const BlogDetail = () => {
   return <article className="blog-detail">
     <div className="back-link"><Link to="/blogs">← All Articles</Link></div>
     <h1>{article.title}</h1>
-    <p className="meta">Published {article.date} · {article.author}</p>
+    <p className="meta">Published {article.date} · <Link to="/about">{article.author}</Link></p>
     <div className="blog-tags">{article.topics.map(topic => <span key={topic} className="tag">{topic}</span>)}</div>
     {article.modelLaunchDate && <p className="meta">Model launched {article.modelLaunchDate}</p>}
     {article.coverageDate && <p className="meta">Information checked {article.coverageDate}</p>}

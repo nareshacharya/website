@@ -25,6 +25,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-meta">
           <a href="/sitemap.xml">Sitemap</a>
+          <a href="/rss.xml">RSS</a>
         </div>
         <p className="copyright">© {new Date().getFullYear()} Naresh Pentapati</p>
       </div>
