@@ -1,144 +1,29 @@
-# Naresh Pentapati - Personal Portfolio Website
+# Naresh Pentapati portfolio
 
-A React-based portfolio website showcasing the work and expertise of Naresh Pentapati, a UX Leader specializing in public safety systems and enterprise UX solutions.
+Source for [nareshpentapati.in](https://nareshpentapati.in), a React 19 portfolio built with Create React App and CRACO.
 
-🌐 **Live Website**: [https://nareshpentapati.in](https://nareshpentapati.in)
-
-## About
-
-This portfolio showcases flagship innovations and 10+ UX projects spanning:
-
-- **Flagship Accelerators**: Hekla (AI App Builder for Pega), Beetle (Enterprise Form Builder for Pega Constellation)
-- **Public Safety & GovTech**: Emergency management, law enforcement, and citizen safety solutions
-- **Enterprise UX**: Insurance, banking, and Pega-based digital transformation
-- **Design Leadership**: UX strategy, design systems, and organizational transformation
-
-## Features
-
-- ✨ **Interactive Portfolio**: Filterable project showcase with detailed case studies
-- � **Flagship Projects**: Dedicated pages for Hekla and Beetle, with in-depth stories and business impact
-- 📄 **Resume Download**: Downloadable PDF resume from the About page
-- ☕ **Coffee Chat**: One-click Google Calendar invite for virtual meetings
-- 📱 **Responsive Design**: Mobile-first, modern layouts
-- 📝 **Blog System**: Articles on UX strategy, design leadership, and industry insights
-- 🎭 **Smooth Animations**: Framer Motion and AOS for engaging user experience
-
-## Tech Stack
-
-- **Frontend**: React 19.1.0, React Router 7.5.3
-- **Build Tool**: Create React App with CRACO for webpack customization
-- **Styling**: CSS Modules with custom animations
-- **Libraries**:
-  - Framer Motion (animations)
-  - React Markdown (blog content)
-  - React Icons (UI icons)
-  - AOS (scroll animations)
-  - React CountUp (animated statistics)
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/nareshacharya/website.git
-   cd website
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Available Scripts
-
-### `npm start`
-
-Runs the app in development mode with hot reloading.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run deploy`
-
-Builds and deploys the app to GitHub Pages.
-
-## Project Structure
-
-```
-src/
-├── components/          # Reusable UI components
-│   ├── AnimatedCompetencies.js
-│   ├── Certifications.js
-│   ├── Footer.js
-│   ├── HeroMinimal.js
-│   ├── Navbar.js
-│   └── ...
-├── pages/              # Main page components
-│   ├── Home.js
-│   ├── About.js
-│   ├── Portfolio.js
-│   ├── Blogs.js
-│   ├── Contact.js
-│   ├── blogs/          # Blog detail pages
-│   └── projects/       # Project case study pages
-└── App.js             # Main app component with routing
-```
-
-## Deployment
-
-The website is automatically deployed to GitHub Pages using the `gh-pages` package. To deploy:
+## Local development
 
 ```bash
-npm run deploy
+npm ci
+npm start
 ```
 
-## Portfolio Highlights
+Run the checks before shipping:
 
-### Flagship Accelerators
+```bash
+CI=true npm test -- --watch=false --runInBand
+npm run build
+```
 
-- **Hekla**: AI-native app builder for Pega. End-to-end innovation—vision, design, build, and rollout by Naresh. Generates React+Next.js apps from natural language, integrates with Pega DX APIs, and enables one-click GitHub publishing.
-- **Beetle**: Enterprise form builder for Pega Constellation. Converts Figma designs to React+TypeScript, drag-and-drop builder, DX API integration, and enterprise compliance. Strategic differentiator for consulting delivery.
+The site uses React Router. The host must serve the built `index.html` for application routes that do not have a physical HTML file. The build also creates physical HTML pages for `/blogs` and every published article.
 
-### Public Safety Projects
+## Articles
 
-- **Crowd Management**: Real-time crowd monitoring with GIS and event operations
-- **Disaster Management**: Emergency resource mapping and response planning
-- **Crime Analytics**: Predictive insights with heatmaps and data visualization
-- **Investigation Analytics**: Link analysis and case mapping for law enforcement
+`content/blogs/*.md` is the only article source. Each file has a slug-based filename, Markdown body and frontmatter for title, summary, author, publication date, topics, draft flag and sources. See [content/blogs/README.md](content/blogs/README.md) for the format.
 
-### Enterprise UX Projects
+The content build runs before development, tests and production builds. It creates the browser data, crawlable article pages, RSS feed and sitemap from reviewed articles with `draft: false`. Unapproved drafts belong outside this public repository. The older unreviewed article copy has not been published.
 
-- **Crum & Forster**: Pega Constellation-aligned underwriting workbench
-- **TAL Insurance**: Service and underwriting portal redesign
-- **ASB**: UX assessment and design system standardization
+## Publishing
 
-## Contact
-
-- **Email**: pentapati.naresh@gmail.com
-- **LinkedIn**: [linkedin.com/in/naresh-pentapati](https://linkedin.com/in/naresh-pentapati)
-- **GitHub**: [github.com/nareshacharya](https://github.com/nareshacharya)
-
-## License
-
-This project is a personal portfolio website. All content, case studies, and designs are proprietary. Flagship accelerators (Hekla, Beetle) are original IP by Naresh Pentapati.
+Review content and tests, then push the approved changes to `main` through the repository workflow. Hosting is managed separately; the old GitHub Pages deploy command has been removed.

@@ -5,19 +5,35 @@ import './Portfolio.css';
 
 const allProjects = [
   {
+    id: 'emidaddy',
+    title: 'EMIdaddy',
+    category: 'enterprise',
+    tech: ['Product Strategy', 'Financial Planning', 'UX', 'Frontend'],
+    description: 'An end-to-end borrower financial-planning product with affordability calculators, loan management and clear repayment breakdowns.',
+    image: process.env.PUBLIC_URL + '/images/emidaddy-cover.svg'
+  },
+  {
+    id: 'realiq',
+    title: 'realIQ',
+    category: 'enterprise',
+    tech: ['Real Estate', 'Map UX', 'Product Design', 'Frontend'],
+    description: 'An invite-only real-estate intelligence product for map-first village and land exploration with progressive detail.',
+    image: process.env.PUBLIC_URL + '/images/realiq-cover.svg'
+  },
+  {
     id: 'hekla',
     title: 'Hekla',
     category: 'enterprise',
     tech: ['AI', 'App Generation', 'Pega', 'Platform', 'Enterprise UX'],
-    description: 'Hekla is a next-gen incident response and public safety platform, integrating AI-driven analytics, real-time data, and seamless field coordination for agencies and enterprises.',
+    description: 'A validated proof of concept for an AI app builder that explores generating Pega-connected applications from natural-language prompts.',
     image: process.env.PUBLIC_URL + '/images/hekla.png'
   },
   {
     id: 'beetle',
     title: 'Beetle',
     category: 'enterprise',
-    tech: [ 'Low-code', 'Case Management', 'Platform', 'Enterprise UX'],
-    description: 'Beetle is an AI-powered case management and automation suite, streamlining investigations, evidence handling, and workflow orchestration for modern agencies.',
+    tech: ['Low-code', 'Visual Builder', 'Pega', 'Enterprise UX'],
+    description: 'A visual low-code builder prototype exploring how teams can move from interface design to Pega-connected application components.',
     image: process.env.PUBLIC_URL + '/images/beetle-landing.png'
   },
   {

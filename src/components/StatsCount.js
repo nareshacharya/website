@@ -3,9 +3,9 @@ import { useInView } from 'react-intersection-observer';
 import './StatsCount.css';
 
 const stats = [
-  { label: 'Business Impact', end: 10, suffix: 'M+', prefix: '$' },
-  { label: 'Team Members', end: 30, suffix: '+' },
-  { label: 'Years Experience', end: 18, suffix: '+' }
+  { label: 'Years in Design & Technology', end: 20, suffix: '+' },
+  { label: 'Product Prototypes', end: 2, suffix: '' },
+  { label: 'Connected Disciplines', end: 3, suffix: '' }
 ];
 
 export default function StatsCount() {
@@ -21,7 +21,7 @@ export default function StatsCount() {
               end={stat.end}
               duration={2}
               delay={0}
-              suffix={stat.suffix || '+'}
+              suffix={stat.suffix}
             >
               {({ countUpRef }) => (
                 <>

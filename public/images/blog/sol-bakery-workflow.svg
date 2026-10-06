@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" role="img" aria-labelledby="title desc">
+<title id="title">FROM PICKUP RULES TO A CHECKABLE PROTOTYPE</title>
+<desc id="desc">GPT-6.1 Sol  /  Illustrative UX workflow. Three stages: Give it clear rules: Bakery hours and pickup rules, A screenshot and fake orders, List what is still unknown; Build three states: Available pickup, Unavailable time, Sold-out item; Review with people: Check rules and keyboard use, Ask what actually passed, Observe a real customer. Keep publishing and payments behind human approval.</desc>
+<rect width="1400" height="640" fill="#F6F4EE"/>
+<rect x="56" y="55" width="60" height="8" fill="#315C48"/>
+<text x="56" y="106" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" fill="#17202B">FROM PICKUP RULES TO A CHECKABLE PROTOTYPE</text>
+<text x="56" y="147" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#51606B">GPT-6.1 Sol  /  Illustrative UX workflow</text>
+<rect x="56" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="98" cy="244" r="24" fill="#315C48"/>
+<text x="98" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">01</text>
+<text x="82" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Give it clear rules</text>
+<text x="82" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Bakery hours and pickup rules</text>
+<text x="82" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">A screenshot and fake orders</text>
+<text x="82" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">List what is still unknown</text>
+<path d="M 463 343 H 488 M 481 335 L 489 343 L 481 351" fill="none" stroke="#315C48" stroke-width="3"/>
+<rect x="503" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="545" cy="244" r="24" fill="#315C48"/>
+<text x="545" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">02</text>
+<text x="529" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Build three states</text>
+<text x="529" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Available pickup</text>
+<text x="529" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Unavailable time</text>
+<text x="529" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Sold-out item</text>
+<path d="M 910 343 H 935 M 928 335 L 936 343 L 928 351" fill="none" stroke="#315C48" stroke-width="3"/>
+<rect x="950" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="992" cy="244" r="24" fill="#315C48"/>
+<text x="992" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">03</text>
+<text x="976" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Review with people</text>
+<text x="976" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Check rules and keyboard use</text>
+<text x="976" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Ask what actually passed</text>
+<text x="976" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Observe a real customer</text>
+<text x="56" y="548" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#315C48">Keep publishing and payments behind human approval.</text>
+<text x="56" y="590" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#607078">Original editorial diagram  •  October 6, 2026  •  No measured model results</text>
+</svg>

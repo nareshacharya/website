@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import PageMeta from './components/PageMeta';
 
 // Project case study pages
 import CrowdManagement from './pages/projects/CrowdManagement';
@@ -27,6 +28,8 @@ import Vision from './pages/Vision';
 import NotFound from './pages/NotFound';
 import Hekla from './pages/projects/Hekla';
 import Beetle from './pages/projects/Beetle';
+import EMIdaddy from './pages/projects/EMIdaddy';
+import RealIQ from './pages/projects/RealIQ';
 
 function App() {
   return (
@@ -34,14 +37,15 @@ function App() {
       <Header />
       <FloatingNav />
       <ScrollToTop />
+      <PageMeta />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/blogs" element={<Blogs />} /> */}
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/vision" element={<Vision />} />
-        {/* <Route path="/blogs/:blogId" element={<BlogDetail />} /> */}
+        <Route path="/blogs/:blogId" element={<BlogDetail />} />
         <Route path="*" element={<NotFound />} />
         {/* Project Detail Pages */}
         <Route path="/portfolio/crowd-management" element={<CrowdManagement />} />
@@ -56,6 +60,8 @@ function App() {
   <Route path="/portfolio/asb-ux-assessment" element={<ASBUXAssessment />} />
   <Route path="/portfolio/hekla" element={<Hekla />} />
   <Route path="/portfolio/beetle" element={<Beetle />} />
+  <Route path="/portfolio/emidaddy" element={<EMIdaddy />} />
+  <Route path="/portfolio/realiq" element={<RealIQ />} />
       </Routes>
       <Footer />
     </Router>

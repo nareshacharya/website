@@ -2,8 +2,10 @@
 .floating-nav {
   position: fixed;
   bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
   z-index: 1000;
   pointer-events: none;
 }
@@ -135,15 +137,17 @@
   .nav-pill {
     padding: 0.3rem 0.5rem;
     gap: 0.15rem;
+    max-width: calc(100vw - 1rem);
+    overflow-x: auto;
   }
 
   .nav-item {
-    min-width: 36px;
-    height: 28px;
+    min-width: 44px;
+    height: 44px;
   }
 
   .nav-content {
-    padding: 0 0.5rem;
+    padding: 0 0.4rem;
   }
 
   .nav-label {
@@ -156,19 +160,4 @@
     right: 1px;
     bottom: 1px;
   }
-}
-
-/* Animation for page load */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-2px);
-  }
-}
-
-.floating-nav {
-  animation: float 3s ease-in-out infinite;
 }

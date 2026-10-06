@@ -9,7 +9,8 @@ const FloatingNav = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/portfolio', label: 'Work' },
-    { path: '/vision', label: 'Vision & Philosophy' },
+    { path: '/blogs', label: 'Articles' },
+    { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' }
   ];
 

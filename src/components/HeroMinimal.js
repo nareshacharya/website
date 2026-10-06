@@ -12,8 +12,8 @@ const HeroMinimal = () => {
       <div className="hero-right">
       
         <div className="intro-text">
-          <h1>Transforming Digital Experiences<br/>at Scale</h1>
-          <p>Leading enterprise UX transformation with AI-powered innovation. Driving multi-million dollar business impact through strategic design leadership and team empowerment across 30+ member organizations.</p>
+          <h1>UX and product leadership,{' '}<br/>from idea to implementation</h1>
+          <p>I’m Naresh Pentapati, Head of Creative and Associate Vice President at Photon. I work across product discovery, UX design and frontend development, bringing 20+ years of experience with enterprise platforms and digital products.</p>
         </div>
 
         <div className="hero-ctas">

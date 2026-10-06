@@ -26,11 +26,13 @@
   },
   "homepage": "https://nareshpentapati.in",
   "scripts": {
+    "content:build": "node scripts/build-content.mjs",
+    "prestart": "npm run content:build",
     "start": "craco start",
+    "prebuild": "npm run content:build",
     "build": "craco build",
-    "test": "craco test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "pretest": "npm run content:build",
+    "test": "craco test"
   },
   "eslintConfig": {
     "extends": [
@@ -49,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }

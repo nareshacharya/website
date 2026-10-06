@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" role="img" aria-labelledby="title desc">
+<title id="title">MAKE CONFLICTING RULES VISIBLE</title>
+<desc id="desc">Claude Opus 5.5  /  Illustrative UX workflow. Three stages: Read the sources: Help page: 30 days, Email: 14 days, App: contact support; Expose the conflict: Link each claim to its source, Mark the unresolved decision, Draft the agreed parts; Decide and test: Policy owner resolves the rule, Designer reviews the flow, Customers try the return. A generated answer cannot decide which policy is correct.</desc>
+<rect width="1400" height="640" fill="#F6F4EE"/>
+<rect x="56" y="55" width="60" height="8" fill="#875239"/>
+<text x="56" y="106" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700" fill="#17202B">MAKE CONFLICTING RULES VISIBLE</text>
+<text x="56" y="147" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#51606B">Claude Opus 5.5  /  Illustrative UX workflow</text>
+<rect x="56" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="98" cy="244" r="24" fill="#875239"/>
+<text x="98" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">01</text>
+<text x="82" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Read the sources</text>
+<text x="82" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Help page: 30 days</text>
+<text x="82" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Email: 14 days</text>
+<text x="82" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">App: contact support</text>
+<path d="M 463 343 H 488 M 481 335 L 489 343 L 481 351" fill="none" stroke="#875239" stroke-width="3"/>
+<rect x="503" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="545" cy="244" r="24" fill="#875239"/>
+<text x="545" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">02</text>
+<text x="529" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Expose the conflict</text>
+<text x="529" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Link each claim to its source</text>
+<text x="529" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Mark the unresolved decision</text>
+<text x="529" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Draft the agreed parts</text>
+<path d="M 910 343 H 935 M 928 335 L 936 343 L 928 351" fill="none" stroke="#875239" stroke-width="3"/>
+<rect x="950" y="199" width="392" height="288" rx="18" fill="#FFFFFF" stroke="#D8DDD7" stroke-width="2"/>
+<circle cx="992" cy="244" r="24" fill="#875239"/>
+<text x="992" y="251" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="white">03</text>
+<text x="976" y="307" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#17202B">Decide and test</text>
+<text x="976" y="359" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Policy owner resolves the rule</text>
+<text x="976" y="394" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Designer reviews the flow</text>
+<text x="976" y="429" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#394958">Customers try the return</text>
+<text x="56" y="548" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#875239">A generated answer cannot decide which policy is correct.</text>
+<text x="56" y="590" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#607078">Original editorial diagram  •  October 6, 2026  •  No measured model results</text>
+</svg>

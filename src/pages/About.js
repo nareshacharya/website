@@ -9,15 +9,18 @@ const About = () => {
         <h1>About Me</h1>
       </div>
       <section className="about-hero">
-        <h2>Beyond the Executive</h2>
+        <h2>Product thinking, design and implementation</h2>
         <p className="hero-description">
-          While I lead design organizations and drive digital transformation by day, my true inspiration comes from the intersection of technology, creativity, and human experience. I believe the best leaders are lifelong learners who draw insights from diverse experiences.
+          I’m Head of Creative and Associate Vice President at Photon. My work spans understanding domains and users, defining product requirements, mapping journeys, designing interfaces and building working software. I lead teams and advise clients while staying hands-on. At Photon, I also explore AI tools for creative and UX work, workflow agents and proofs of concept.
+        </p>
+        <p className="hero-description">
+          Earlier work includes accounts and wallets at Entain, public safety with L&amp;T, citizen services with EY, Pega and React at Areteans, and consulting at Deloitte. I have also taken EMIdaddy and realIQ from product definition through implementation.
         </p>
         
         <div className="hero-stats">
           <div className="stat-item">
-            <div className="stat-number">18+</div>
-            <div className="stat-label">Years in Design</div>
+            <div className="stat-number">20+</div>
+            <div className="stat-label">Years in Design & Technology</div>
           </div>
           <div className="stat-item">
             <div className="stat-number">15+</div>
@@ -44,12 +47,10 @@ const About = () => {
             Download Resume
           </a>
           <a
-            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Coffee%20Chat%20with%20Naresh%20Pentapati&details=Let%27s%20connect%20for%20a%20virtual%20coffee%20chat!%20Feel%20free%20to%20adjust%20the%20time%20as%20needed.&dates=20250820T090000Z/20250820T093000Z&ctz=Asia/Kolkata&add=pentapati.naresh@gmail.com"
+            href="mailto:pentapati.naresh@gmail.com?subject=Coffee%20chat"
             className="cta-btn secondary"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Schedule Coffee Chat
+            Get in Touch
           </a>
         </div>
       </section>
@@ -58,15 +59,15 @@ const About = () => {
       <section className="journey-section">
         <h2>My Journey</h2>
         <p className="section-subtitle">
-          From individual contributor to design director—a journey of continuous learning, growth, and expanding impact in the world of design and technology.
+          From frontend development to product and experience leadership, with hands-on work across research, design and engineering.
         </p>
         
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-year">2007</div>
             <div className="timeline-content">
-              <h3>Corporate Beginnings</h3>
-              <p>Started as a frontend guy, fell in love with the intersection of art and technology.</p>
+              <h3>Frontend Beginnings</h3>
+              <p>Started working in frontend development and grew toward user experience and product design.</p>
             </div>
           </div>
           
@@ -89,32 +90,39 @@ const About = () => {
           <div className="timeline-item">
             <div className="timeline-year">2021</div>
             <div className="timeline-content">
-              <h3>AI Innovation</h3>
-              <p>Pioneered AI-enhanced design processes and built industry-leading design tools.</p>
+              <h3>Head of Product Experience, Areteans</h3>
+              <p>Led product experience work from May 2021 through April 2026, including Pega and React-based experiences.</p>
             </div>
           </div>
           
           <div className="timeline-item">
-            <div className="timeline-year">2022</div>
-            <div className="timeline-content">
-              <h3>Head of Design & Thought Leader</h3>
-              <p>Leading 30+ member teams while sharing insights through speaking and writing.</p>
-            </div>
-          </div>
-          <div className="timeline-item">
             <div className="timeline-year">2024</div>
             <div className="timeline-content">
-              <h3>Low-code App Builder</h3>
-              <p>Built a low-code app builder to revolutionalize the way frontend developers create Pega applications.</p>
+              <h3>Visual Builder Prototype</h3>
+              <p>Explored visual workflows for creating Pega-connected application components through Beetle.</p>
             </div>
           </div> 
           <div className="timeline-item">
             <div className="timeline-year">2025</div>
             <div className="timeline-content">
-              <h3>AI App Builder</h3>
-              <p>A game changing innovation in Pega consulting with an AI-powered app builder to disrupt the frontend capabilities.</p>
+              <h3>AI App Builder Proof of Concept</h3>
+              <p>Developed Hekla as a proof of concept for creating Pega-connected interfaces from natural-language prompts.</p>
             </div>
           </div>                    
+          <div className="timeline-item">
+            <div className="timeline-year">2026</div>
+            <div className="timeline-content">
+              <h3>Head of Creative & Associate Vice President, Photon</h3>
+              <p>Since May 2026, leading creative and UX work while exploring AI-assisted workflows, agents and product proofs of concept.</p>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-year">2027</div>
+            <div className="timeline-content">
+              <h3>MBA in AI, BITS</h3>
+              <p>Expected April 2027.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -128,7 +136,7 @@ const About = () => {
         <div className="passions-grid">
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/wildlife.jpg'} alt="Wildlife Photography" />
+              <img src={process.env.PUBLIC_URL + '/images/about/wildlife.jpg'} alt="Wildlife Photography" loading="lazy" />
             </div>
             <div className="passion-content">
               <h3>Wildlife Photography</h3>
@@ -145,7 +153,7 @@ const About = () => {
           
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/cycling.jpg'} alt="Cycling Adventures" />
+              <img src={process.env.PUBLIC_URL + '/images/about/cycling.jpg'} alt="Cycling Adventures" loading="lazy" />
             </div>
             <div className="passion-content">
               <h3>Cycling Adventures</h3>
@@ -163,7 +171,7 @@ const About = () => {
           
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/italy.jpg'} alt="Global Travel" />
+              <img src={process.env.PUBLIC_URL + '/images/about/italy.jpg'} alt="Global Travel" loading="lazy" />
             </div>
             <div className="passion-content">
               <h3>Global Travel</h3>
@@ -181,7 +189,7 @@ const About = () => {
           
           <div className="passion-card">
             <div className="passion-image">
-              <img src={process.env.PUBLIC_URL + '/images/about/travel.jpg'} alt="Creative Arts" />
+              <img src={process.env.PUBLIC_URL + '/images/about/travel.jpg'} alt="Creative Arts" loading="lazy" />
             </div>
             <div className="passion-content">
               <h3>Creative Arts</h3>

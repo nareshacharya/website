@@ -15,7 +15,7 @@ const Header = () => {
 
   const formatTime = (date) => {
     return date.toLocaleTimeString('en-US', {
-      timeZone: 'GMT',
+      timeZone: 'Asia/Kolkata',
       hour12: false,
       hour: '2-digit',
       minute: '2-digit',
@@ -30,7 +30,7 @@ const Header = () => {
       </div>
       <div className="header-right">
         <div className="location">Hyderabad</div>
-        <div className="time">GMT {formatTime(currentTime)}</div>
+        <div className="time">IST {formatTime(currentTime)}</div>
       </div>
     </header>
   );

@@ -15,6 +15,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/portfolio">Work</Link></li>
             <li><Link to="/about">About</Link></li>
+            <li><Link to="/blogs">Articles</Link></li>
             <li><Link to="/vision">Vision & Philosophy</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
@@ -23,9 +24,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-meta">
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/terms">Terms</Link>
-          <Link to="/sitemap">Sitemap</Link>
+          <a href="/sitemap.xml">Sitemap</a>
         </div>
         <p className="copyright">© {new Date().getFullYear()} Naresh Pentapati</p>
       </div>

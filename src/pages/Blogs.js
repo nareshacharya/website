@@ -1,90 +1,29 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import articles from '../generated/blogs.json';
 import './Blogs.css';
 
-const allBlogs = [
-  {
-    id: "ux-maturity",
-    title: "UX Maturity in an Organization — From Awareness to Impact",
-    summary: "Understand the stages of UX maturity, how to assess it, and why it’s essential for organizational success.",
-    tags: ['UX Leadership', 'Design Culture', 'Enterprise UX']
-  },
-  {
-    id: "pegadesign",
-    title: "Designing for Pega Constellation",
-    summary: "A practical guide to designing scalable, upgrade-friendly experiences using Pega's Constellation architecture.",
-    tags: ['Pega', 'Design Systems']
-  },
-  {
-    id: "ai-ux",
-    title: "Human-Centered AI: Beyond the Hype",
-    summary: "Designing trustworthy AI tools starts with transparency, control, and shared understanding — not magic.",
-    tags: ['AI', 'UX Strategy']
-  },
-  {
-    id: "govtech",
-    title: "Designing for Public Sector: 5 Things I Learned",
-    summary: "Lessons from building digital platforms for public safety, disaster response, and policy-led ecosystems.",
-    tags: ['Public Sector', 'UX Strategy']
-  },
-  {
-    id: "ux-strategy",
-    title: "Crafting a UX Strategy That Works",
-    summary: "A real-world approach to defining UX vision, priorities, and execution frameworks that align with product and business goals.",
-    tags: ['UX Strategy', 'Design Leadership', 'Product Design', 'Digital Transformation']
-  },
-];
-
 const Blogs = () => {
-  const [activeTag, setActiveTag] = useState(null);
-
-  const filteredBlogs = !activeTag
-    ? allBlogs
-    : allBlogs.filter(blog => blog.tags.includes(activeTag));
+  const [activeTopic, setActiveTopic] = useState(null);
+  const topics = [...new Set(articles.flatMap(article => article.topics))];
+  const visible = activeTopic ? articles.filter(article => article.topics.includes(activeTopic)) : articles;
 
   return (
     <div className="blog-wrapper">
-      <div className="page-hero">
-        <h1>Articles & Writing</h1>
-      </div>
-
-      <div className="blog-filters">
-        <button onClick={() => setActiveTag(null)} className={!activeTag ? 'active' : ''}>All</button>
-        {[...new Set(allBlogs.flatMap(b => b.tags))].map(tag => (
-          <button
-            key={tag}
-            onClick={() => setActiveTag(tag)}
-            className={activeTag === tag ? 'active' : ''}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
-
+      <div className="page-hero"><h1>Articles & Writing</h1></div>
+      {articles.length > 0 && <div className="blog-filters">
+        <button type="button" onClick={() => setActiveTopic(null)} className={!activeTopic ? 'active' : ''}>All</button>
+        {topics.map(topic => <button type="button" key={topic} onClick={() => setActiveTopic(topic)} className={activeTopic === topic ? 'active' : ''}>{topic}</button>)}
+      </div>}
       <div className="blog-list">
-        {filteredBlogs.map(blog => (
-          <Link to={`/blogs/${blog.id}`} key={blog.id} className="blog-card-link">
-            <div className="blog-card">
-              <h3>{blog.title}</h3>
-              <p>{blog.summary}</p>
-              <div className="blog-tags">
-                {blog.tags.map((tag, i) => (
-                  <span
-                    key={i}
-                    className={`tag ${activeTag === tag ? 'active' : ''}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setActiveTag(tag === activeTag ? null : tag);
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Link>
-        ))}
+        {visible.length ? visible.map(article => <Link to={`/blogs/${article.slug}`} key={article.slug} className="blog-card-link">
+          <article className="blog-card">
+            <h2>{article.title}</h2>
+            <p className="meta">{article.date} · {article.author}</p>
+            <p>{article.summary}</p>
+            <div className="blog-tags">{article.topics.map(topic => <span className="tag" key={topic}>{topic}</span>)}</div>
+          </article>
+        </Link>) : <div className="blog-card"><h2>New writing is on its way</h2><p>Explore my work or get in touch while I prepare new articles.</p><p><Link to="/portfolio">Explore my work</Link> · <Link to="/contact">Contact me</Link></p></div>}
       </div>
     </div>
   );

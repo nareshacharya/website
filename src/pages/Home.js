@@ -1,20 +1,11 @@
 import './Home.css';
 
-import SneekPeek from '../components/SneekPeek';
 import '../components/SneekPeek.css';
 import HeroMinimal from '../components/HeroMinimal';
-import { useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import AnimatedCompetencies from '../components/AnimatedCompetencies';
-import Certifications from '../components/Certifications';
 import CompetenciesSection from '../components/CompetenciesSection';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.3 });
-
-  if (inView) controls.start("show");
-
   return (
     <>
       <HeroMinimal />
@@ -25,40 +16,40 @@ const Home = () => {
           <div className="leadership-header">
             <h2>Leadership Impact at Scale</h2>
             <p className="leadership-subtitle">
-              Transforming organizations through strategic design leadership, team empowerment, and AI-driven innovation that delivers measurable business results.
+              Connecting product strategy, research, experience design and frontend implementation across enterprise platforms and digital products.
             </p>
           </div>
           
           <div className="impact-metrics">
             <div className="metric-item">
-              <div className="metric-number">30+</div>
-              <div className="metric-label">Design Team Members Led</div>
+              <div className="metric-number">01</div>
+              <div className="metric-label">Discovery & Research</div>
               <div className="metric-description">
-                Built and scaled high-performing design organizations across multiple enterprise companies
+                Understanding the domain, users and constraints before defining the product direction
               </div>
             </div>
             
             <div className="metric-item">
-              <div className="metric-number">$10M+</div>
-              <div className="metric-label">Business Impact Delivered</div>
+              <div className="metric-number">02</div>
+              <div className="metric-label">Product Definition</div>
               <div className="metric-description">
-                Drove measurable revenue growth through strategic UX initiatives and product innovations
+                Turning insight into requirements, priorities and journeys that a team can build
               </div>
             </div>
             
             <div className="metric-item">
-              <div className="metric-number">50+</div>
-              <div className="metric-label">Enterprise Projects Delivered</div>
+              <div className="metric-number">03</div>
+              <div className="metric-label">Experience Design</div>
               <div className="metric-description">
-                Led end-to-end design transformation for Fortune 500 companies and global brands
+                Designing interfaces and systems that make complex workflows easier to use
               </div>
             </div>
             
             <div className="metric-item">
-              <div className="metric-number">2</div>
-              <div className="metric-label">AI Tools Built In-House</div>
+              <div className="metric-number">04</div>
+              <div className="metric-label">Frontend Implementation</div>
               <div className="metric-description">
-                Pioneered Hekla and Beetle - revolutionary AI-powered design and development platforms
+                Prototyping and building working software to test ideas in practice
               </div>
             </div>
           </div>
@@ -73,7 +64,7 @@ const Home = () => {
           <div className="projects-header">
             <h2>Product Innovation</h2>
             <p className="projects-subtitle">
-              Driving state-of-the-art product design that transforms businesses from AI-powered platforms to smart city solutions delivering measurable impact, speed, and scale. Here are a couple I am proud to share:
+              Exploring useful products from discovery and interaction design through working software. Here are two prototypes I can share:
             </p>
           </div>
           
@@ -87,16 +78,11 @@ const Home = () => {
           </div>
           <div className="hekla-flagship-content">
             <h2 className="hekla-title">Hekla - AI App Builder</h2>
-            <div className="hekla-subtitle">First-of-its-kind AI-powered platform that transforms natural language into enterprise-grade Pega apps.</div>
+            <div className="hekla-subtitle">An AI app builder proof of concept for Pega-connected applications.</div>
             <div className="hekla-description">
-              I spearheaded the vision, design, and full development of Hekla — a flagship innovation redefining Pega consulting. With unmatched speed, efficiency, and ROI, it delivers apps in hours instead of weeks, setting a new benchmark in the industry.
+              I developed Hekla from concept to a working proof of concept, exploring how natural-language prompts could help teams create application interfaces connected to Pega.
             </div>
-            <div className="hekla-stats-row">
-              <div className="hekla-stat"><span className="stat-value">10x</span><span className="stat-label">Faster Delivery</span></div>
-              <div className="hekla-stat"><span className="stat-value">$2.5M+</span><span className="stat-label">Business Impact</span></div>
-              <div className="hekla-stat"><span className="stat-value">100% AI</span><span className="stat-label">No-Code Apps</span></div>
-            </div>
-            <a href="/portfolio/Hekla" className="cta-button secondary">View Product</a>
+            <Link to="/portfolio/hekla" className="cta-button secondary">View Product</Link>
           </div>
         </div>
       </div>
@@ -105,27 +91,22 @@ const Home = () => {
       <div className="hekla-flagship-section">
         <div className="hekla-flagship-row">
           <div className="hekla-flagship-image-wrapper">
-            <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Hekla AI App Builder" className="hekla-flagship-image" />
+            <img src={process.env.PUBLIC_URL + '/images/beetle-landing.png'} alt="Beetle visual low-code builder" className="hekla-flagship-image" />
           </div>
           <div className="hekla-flagship-content">
             <h2 className="hekla-title">Beetle - Low-Code Accelerator</h2>
-            <div className="hekla-subtitle">Proprietary low-code platform bridging Figma design and Pega DX API for rapid, accessible enterprise app delivery.</div>
+            <div className="hekla-subtitle">A visual low-code builder prototype for Pega-connected interfaces.</div>
             <div className="hekla-description">
-              Conceived and built Beetle to give our team a competitive edge in Pega consulting. Enables 4x faster delivery, seamless Figma-to-code workflow, and enterprise-ready, accessible components.
+              I conceived and built Beetle as a prototype for moving from interface concepts to reusable application components with a visual workflow.
             </div>
-            <div className="hekla-stats-row">
-              <div className="hekla-stat"><span className="stat-value">4x</span><span className="stat-label">Faster Delivery</span></div>
-              <div className="hekla-stat"><span className="stat-value">$330k+</span><span className="stat-label">Annual Client Savings</span></div>
-              <div className="hekla-stat"><span className="stat-value">100%</span><span className="stat-label">Accessible Components</span></div>
-            </div>
-            <a href="/portfolio/Beetle" className="cta-button secondary">View Product</a>
+            <Link to="/portfolio/beetle" className="cta-button secondary">View Product</Link>
           </div>
         </div>
       </div>
 
 
           <div className="portfolio-cta">
-            <a href="/portfolio" className="portfolio-btn">Explore My Work</a>
+            <Link to="/portfolio" className="portfolio-btn">Explore My Work</Link>
           </div>
         </div>
       </section>

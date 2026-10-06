@@ -48,6 +48,10 @@ h1 {
   color: #333;
 }
 
+.blog-content img { max-width: 100%; height: auto; }
+.blog-content pre { overflow-x: auto; }
+.blog-content a, .blog-sources a { overflow-wrap: anywhere; }
+
 .blog-detail h1 {
   font-size: 2rem;
   margin-top: 2rem;

@@ -4,32 +4,32 @@ import './CompetenciesSection.css';
 
 const coreCompetencies = [
   {
-    title: 'Design Leadership & Strategy',
-    description: 'Defining UX strategy that balances user needs, business goals, and technology feasibility. Setting direction for enterprise-scale design transformations',
+    title: 'Product Definition & Prioritization',
+    description: 'Connecting user needs, business goals and technical constraints to shape requirements, roadmaps and product decisions.',
   },
   {
-    title: 'Experience-Centered Innovation',
-    description: 'Creating state-of-the-art products (Hekla, Beetle, Smart City solutions) that merge UX principles with cutting-edge tech like AI and low-code',
+    title: 'Discovery & Domain Research',
+    description: 'Learning complex domains, studying users and testing assumptions before committing to a solution.',
   },
   {
-    title: 'Enterprise UX Strategy',
-    description: 'Leading end-to-end UX for platforms (Pega Constellation, React) with focus on design systems, accessibility, and scalability across industries',
+    title: 'UX & Interaction Design',
+    description: 'Mapping journeys, designing workflows and creating clear interfaces for enterprise platforms and digital products.',
   },
   {
-    title: 'DesignOps & Systems Thinking',
-    description: 'Building design systems and operational frameworks to ensure consistency, speed, and governance in large distributed teams',
+    title: 'Design Systems & DesignOps',
+    description: 'Building reusable patterns and practices that help teams work consistently at scale.',
   },
   {
-    title: 'Research-Driven Insights',
-    description: 'Driving user research, heuristic analysis, and usability testing to shape high-impact decisions in enterprise workflows',
+    title: 'Solution & Experience Consulting',
+    description: 'Advising clients across product, design and implementation choices in complex environments.',
   },
   {
-    title: 'Mentorship & Design Culture',
-    description: 'Growing, coaching, and inspiring 30+ global UI/UX practitioners, instilling ownership, design maturity, and innovation mindset',
+    title: 'Leadership & Mentorship',
+    description: 'Leading multidisciplinary teams while remaining close to the work and supporting practitioner growth.',
   },
   {
-    title: 'Business Impact through UX',
-    description: 'Demonstrating ROI by securing multi-million $ wins, improving adoption, and positioning design as a competitive differentiator',
+    title: 'AI Product Exploration',
+    description: 'Exploring AI tools, agents and proofs of concept with attention to usefulness, control and implementation.',
   },  
 ];
 
