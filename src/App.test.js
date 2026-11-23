@@ -11,9 +11,10 @@ test('introduces the current role and links to work', () => {
   expect(screen.getByRole('link', { name: /explore my work/i })).toHaveAttribute('href', '/portfolio');
 });
 
-test('lists all fifteen approved articles and excludes older unreviewed copy', () => {
+test('lists all sixteen approved articles and excludes older unreviewed copy', () => {
   render(<MemoryRouter><Blogs /></MemoryRouter>);
-  expect(screen.getAllByRole('article')).toHaveLength(15);
+  expect(screen.getAllByRole('article')).toHaveLength(16);
+  expect(screen.getByRole('heading', { name: /Design for the phone people keep/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /GPT-6.1 Sol for UX teams/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /Claude Opus 5.5 for UX teams/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /Gemini 3.8 Flash for UX teams/i })).toBeInTheDocument();
